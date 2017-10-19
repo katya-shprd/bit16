@@ -1,0 +1,140 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif; 
+}
+#menu {
+    font-family: 'Open Sans', sans-serif; 
+    background: transparent;
+    letter-spacing: 1px;
+    position: fixed;
+    width: 100%;
+    }
+ul.topnav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(7, 3, 63);
+    }
+ul.topnav li {
+    float: left;
+    }
+
+ul.topnav li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+ul.topnav li a:hover {
+    text-decoration: underline;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: rgb(7, 3, 63)}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+    }
+
+
+    /*
+    Custom styles
+    */
+#container {
+        margin: 0 auto;
+        width: 100%;
+     
+    }
+
+.header {
+    display: flex;
+    align-items: center; 
+    width: 100%; 
+    height: 100%;
+}
+
+.pic-header {
+    align-items: center; 
+    width: 100%; 
+    height: 100vh;
+}
+
+.pic-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* карточки */
+
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: 2;
+    width: 100%;
+    margin-top: -100px; 
+}
+.card {
+    background: #F8F8F8;
+    -webkit-box-shadow: 0px 4px 14px -2px rgba(0,0,0,0.29);
+    -moz-box-shadow: 0px 4px 14px -2px rgba(0,0,0,0.29);
+    box-shadow: 0px 4px 14px -2px rgba(0,0,0,0.29);
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 400px;
+    flex-basis: 300px;
+    min-width: 200px;
+    margin: 0 20px;
+    margin-bottom: 32px;
+    padding: 20px 10px 40px 10px;
+}
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+#finland {
+    background: #F2F2F2 !important; 
+    margin: -50px;
+    height: 480px;
+    position: relative;
+    z-index: 10;
+}
+#finland h4 {
+    font-size: 55px;
+    font-family: 'Oswald';
+    font-weight: 700; 
+    color: #35B2F9; 
+    margin-top: 10px;
+ 
+}
+#finland-pic {
+    width: calc(100% + 20px);
+    height: 150;
+    margin-top: -20px;
+}
+#country-pic {
+    width: calc(100% + 20px);
+    height: 100;
+    margin-top: -20px;
+}
+.card h4 {
+    font-size: 55px;
+    letter-spacing: 2px;
+    font-family: 'Oswald';
+    font-weight: 700; 
+    color: #F3A579; 
+    margin-top: 10px;
+}
