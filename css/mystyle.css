@@ -1,10 +1,10 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
 }
 #menu {
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
     background: transparent;
     letter-spacing: 1px;
     position: fixed;
@@ -37,7 +37,7 @@ ul.topnav li a:hover:not(.active) {background-color: rgb(7, 3, 63)}
 ul.topnav li.right {float: right;}
 
 @media screen and (max-width: 600px){
-    ul.topnav li.right, 
+    ul.topnav li.right,
     ul.topnav li {float: none;}
     }
 
@@ -48,19 +48,19 @@ ul.topnav li.right {float: right;}
 #container {
         margin: 0 auto;
         width: 100%;
-     
+
     }
 
 .header {
     display: flex;
-    align-items: center; 
-    width: 100%; 
+    align-items: center;
+    width: 100%;
     height: 100%;
 }
 
 .pic-header {
-    align-items: center; 
-    width: 100%; 
+    align-items: center;
+    width: 100%;
     height: 100vh;
 }
 
@@ -80,7 +80,7 @@ ul.topnav li.right {float: right;}
     flex-wrap: wrap;
     z-index: 2;
     width: 100%;
-    margin-top: -100px; 
+    margin-top: -100px;
 }
 .card {
     background: #F8F8F8;
@@ -96,7 +96,7 @@ ul.topnav li.right {float: right;}
     flex-basis: 300px;
     min-width: 200px;
     margin: 0 20px;
-    margin-bottom: 32px;
+    margin-bottom: 72px;
     padding: 20px 10px 40px 10px;
 }
 .container {
@@ -106,7 +106,7 @@ ul.topnav li.right {float: right;}
     align-items: center;
 }
 #finland {
-    background: #F2F2F2 !important; 
+    background: #F2F2F2 !important;
     margin: -50px;
     height: 480px;
     position: relative;
@@ -115,10 +115,10 @@ ul.topnav li.right {float: right;}
 #finland h4 {
     font-size: 55px;
     font-family: 'Oswald';
-    font-weight: 700; 
-    color: #35B2F9; 
+    font-weight: 700;
+    color: #35B2F9;
     margin-top: 10px;
- 
+
 }
 #finland-pic {
     width: calc(100% + 20px);
@@ -134,7 +134,147 @@ ul.topnav li.right {float: right;}
     font-size: 55px;
     letter-spacing: 2px;
     font-family: 'Oswald';
-    font-weight: 700; 
-    color: #F3A579; 
+    font-weight: 700;
+    color: #F3A579;
     margin-top: 10px;
+}
+.card p {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-size: 24px;
+  color: #000000;
+  line-height: 0px;
+  letter-spacing: 20%;
+
+}
+#CA{
+  margin-top: -15px;
+}
+.activities{
+  margin-left: 2em;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-size: 24px;
+  color: #000000;
+  line-height: 0px;
+  letter-spacing: 20%;
+}
+
+#fin{
+  margin-top: -10px;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-size: 24px;
+  color: #b3b3b3;
+  line-height: 0px;
+  letter-spacing: 20%;
+}
+.activities1{
+  margin-left: 2em;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-size: 24px;
+  color: #b3b3b3;
+  line-height: 0px;
+  letter-spacing: 20%;
+}
+#number {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-size: 24px;
+  color: #2D9CDB;
+  line-height: 0px;
+  letter-spacing: 20%;
+  padding-right: 0.5em;
+}
+.num {
+  margin-left: 4.5em;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-size: 24px;
+  color: #2D9CDB;
+  line-height: 0px;
+  letter-spacing: 20%;
+}
+#number1 {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-size: 48px;
+  color: #2D9CDB;
+  line-height: 0px;
+  letter-spacing: 20%;
+  padding-right:0.5em;
+
+}
+.num1 {
+  padding-left: 1.5em;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-size: 48px;
+  color: #2D9CDB;
+  line-height: 0px;
+  letter-spacing: 20%;
+}
+#number2 {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-size: 24px;
+  color: #2D9CDB;
+  line-height: 0px;
+  letter-spacing: 20%;
+  padding-right: 1em;
+}
+.num2 {
+  margin-left: 4.4em;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-size: 24px;
+  color: #2D9CDB;
+  line-height: 0px;
+  letter-spacing: 20%;
+}
+.descr {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 20px;
+  font-weight: normal;
+  color: #000000;
+  line-height: 0px;
+  letter-spacing: 20%;
+  padding-left: 13.2em;
+  line-height: 50px;
+  margin: 0;
+  padding-top: 2.2em;
+}
+.idea{
+    padding-bottom: 5em;
+}
+.idea img{
+  padding-right: 16.5em;
+}
+#container2
+{
+       width: 200px;
+       margin: auto;
+       background-color: #d3eaf8;
+       width: 933px;
+       height: 230px;
+       overflow-y: auto;
+       overflow-x: hidden;
+       border-radius: 20px;
+}
+#container2 h3{
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-size: 36px;
+  font-weight: normal;
+}
+#profile-button{
+  width: 200.04px;
+  height: 60px;
+  padding: 5px;
+  font-family: 'Open Sans';
+  font-size: 17px;
+  background-color: #a7d5f1;
+  border-radius: 8px;
 }
