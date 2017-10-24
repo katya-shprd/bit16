@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-lg-6">
+        <h3 class="mbr-section-title display-4">Companies in the area</h3>
+        <div class="lead">
+			<h2>Select area</h3>
+			<form id="search">
+				<select id="area">
+					<option value=''>-Select-</option>
+					<option value='TORNIO'>TORNIO</option>
+					<option value='YLITORNIO'>YLITORNIO</option>
+				</select>
+				<input type="submit" value="Show" />
+			</form>
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3>About map</h3>
+				</div>
+				<div class="panel-body">
+					<p>Companies are displayed by a marker. As default all the companies are on the map. You can
+					   select an area to limit the nr of companies displayed.</p>
+					<span class="alert alert-info"><img src="images/here.ico" alt="Your location">Your location on the map</span>
+				</div>
+			</div>
+		</div>
+                
+    </div>
+    <div class="col-lg-6 ">
+        <div class="mbr-figure">
+			<div class="result" style="padding:2px"></div>
+			<div class="embedContainer">
+				<div class="googleMap">
+					<div id="map"></div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
