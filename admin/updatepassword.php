@@ -13,22 +13,22 @@ if(!empty($_POST['conf'])) $confpw=$_POST['conf'];else $error=true;
 if(!$error){
 	//check from db
 	session_start();
-	$sql="SELECT Password FROM Users WHERE User_ID=".$_SESSION['User_ID'];
+	$sql="SELECT password FROM user WHERE userID=".$_SESSION['userID'];
 	$result=$conn->query($sql);
 	if($result->num_rows>0){
 		$row=$result->fetch_assoc();
-		if(password_verify($oldpw,$row['Password'])){
+		if(password_verify($oldpw,$row['password'])){
 				if($newpw==$confpw){
 					//update password
 					//crypt the password before saving
-					$newpw=password_hash($newpw,PASSWORD_DEFAULT);
-					$sql="UPDATE Users SET Password='$newpw'
-						  WHERE User_ID=".$_SESSION['User_ID'];
+					$newpw=password_hash($newpw,password_DEFAULT);
+					$sql="UPDATE user SET password='$newpw'
+						  WHERE userID=".$_SESSION['userID'];
 					$conn->query($sql);
-					$_SESSION['msg']='Password updated!';
-				}else $_SESSION['msg']='Passwords do not match!';
+					$_SESSION['msg']='password updated!';
+				}else $_SESSION['msg']='passwords do not match!';
 		}else $_SESSION['msg']='Old password not correct!';
-	}else $_SESSION['msg']='Password not found for user!';
+	}else $_SESSION['msg']='password not found for user!';
 }
 header('location:index.php?');//страница
 ?>

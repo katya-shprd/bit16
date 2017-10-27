@@ -5,7 +5,7 @@
 */
 if(!empty($_GET['area'])) $area=$_GET['area'].'%%';else $area='%%';
 include('db.php');
-$sql="SELECT Company_name,Company_address,Municipality,Company_website FROM Companies WHERE Municipality LIKE '$area'";
+$sql="SELECT companyName,street,city,website FROM company WHERE city LIKE '$area'";
 $result = $conn->query($sql);
 $JSONstring='{"companies":[';
 
@@ -13,13 +13,13 @@ $x=0;
 while($row = $result->fetch_assoc()) {
 	$JSONstring.='{';
 	$JSONstring.='"Companyname":';
-	$JSONstring.='"'.$row['Company_name'].'",';
-	$JSONstring.='"Address":';
-	$JSONstring.='"'.$row['Company_address'].'",';
+	$JSONstring.='"'.$row['companyName'].'",';
+	$JSONstring.='"Street":';
+	$JSONstring.='"'.$row['street'].'",';
 	$JSONstring.='"City":';
-	$JSONstring.='"'.$row['Municipality'].'",';
+	$JSONstring.='"'.$row['city'].'",';
 	$JSONstring.='"Web":';
-	$JSONstring.='"'.$row['Company_website'].'"';
+	$JSONstring.='"'.$row['website'].'"';
 	$x++;
 	if($result->num_rows>$x) $JSONstring.='},';else $JSONstring.='}';
 }

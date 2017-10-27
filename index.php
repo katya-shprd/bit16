@@ -17,6 +17,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/myscript.js"></script>
     <script src="js/login.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -108,7 +109,9 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
       <center><h3>Take part in Northern Lights Route!</h3></center>
       <center><input type="button" value="Become an explorer" id="profile-button"></center>
     </section>
+<div id=logininfo>
 
+</div>
         <footer class="footer-distributed">
 
 			       <div class="footer-left">
@@ -168,6 +171,5 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 			</div>
 
 		</footer>
-
 </body>
 </html>

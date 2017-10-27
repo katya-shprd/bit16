@@ -26,7 +26,7 @@ if(password_verify($password,$row['password'])){
 session_start(); 
 $_SESSION['userID']=$row['userID']; 
 $_SESSION['name']=$row['firstname'].' '.$row['lastname']; 
-echo '{"Status":"OK"}'; //login is correct 
+header('location:./admin/index.php');
 }else echo '{"Status":"Password did not match"}'; 
 }else echo '{"Status":"Email not found"}'; 
 }else echo '{"Status":"Something went wrong"}'; 
