@@ -22,7 +22,7 @@ if($result->num_rows>0){
 			Password <input type="text" name="password" value="'.$row['password'].'" /><br />
 			Phone <input type="text" name="phone" value="'.$row['phone'].'" /><br />
 			Level <select name="level">
-						<option value="">-Select-</option>
+						<option value="'.$row['level'].'">'.$row['level'].'</option>
 					<option value="superadmin">superadmin</option>
 					<option value="admin">admin</option>
 					<option value="editor">editor</option>

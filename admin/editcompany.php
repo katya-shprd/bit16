@@ -5,7 +5,7 @@
 */
 if(!empty($_GET['companyID'])) $companyID=$_GET['companyID'];else $companyID=0;
 include('../db.php');
-$sql="SELECT companyID FROM company WHERE companyID=$companyID";
+$sql="SELECT * FROM company WHERE companyID=$companyID";
 $result=$conn->query($sql);
 if($result->num_rows>0){
 	$row=$result->fetch_assoc();

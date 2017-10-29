@@ -15,7 +15,7 @@ if(!empty($_POST['password'])) $password=$_POST['password'];else $error=true;
 if(!empty($_POST['level'])) $level=$_POST['level'];else $level=0;
 if(!$error){
 	$sql="UPDATE user SET firstname='$firstname',lastname='$lastname',
-		  phone=$phone, email='$email',
+		  phone='$phone', email='$email',
 		  password='$password', level='$level'
 		  WHERE userID=$userID";
 	$conn->query($sql);

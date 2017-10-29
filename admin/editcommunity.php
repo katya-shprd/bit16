@@ -15,10 +15,10 @@ if($result->num_rows>0){
 		$_SESSION['msg']='';
 	}
 	echo '<form action="updatecommunity.php" method="post">
-	Community name <input type="text" name="communityName" value="'.$row['communityName'].'" /><br />
-			<input type="hidden" name="communityID" value="'.$communityID.'" />
+	        <input type="hidden" name="communityID" value="'.$communityID.'" />
+	        Community name <input type="text" name="communityName" value="'.$row['communityName'].'" /><br />	
 			Country <select name="country">
-			<option value="">-Select-</option>
+			<option value="'.$row['country'].'">'.$row['country'].'</option>
 		<option value="Finland">Finland</option>
 		<option value="Norway">Norway</option>
 		<option value="Sweden">Sweden</option>
