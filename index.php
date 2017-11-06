@@ -1,3 +1,10 @@
+<?php
+/*
+	file:	index.php
+	desc:	Main page
+*/
+if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -8,7 +15,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   	<meta name="keywords" content="footer, address, phone, icons" />
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-  	<link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/myscript.js"></script>
+    <script src="js/login.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
@@ -20,20 +30,31 @@
 
 <body>
 
-    <div id="container">
         <div id="menu">
         <ul class="topnav">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="hall.html">HALL OF FAME</a></li>
+
+            <li><a href="#home">HALL OF FAME</a></li>
             <li><a href="#news">MAP</a></li>
             <li><a href="#contact">NORTHERN LIGHTS ROUTE</a></li>
             <li><a href="#contact">OUR STORIES</a></li>
-            <li class="right"><a href="#about">REGISTER</a></li>
-            <li class="right"><a href="#about">SIGN IN</a></li>
-
+            <li class="right" id="signup"><a href="#about">REGISTER</a></li>
+            <li class="right" id="login"><a id="login-trigger" href="#">SIGN IN <span>&#x25BC;</span></a>
+                <div id="login-content">
+                        <form action="login.php" method="post">
+                            <fieldset id="inputs">
+                                <input id="email" type="email" name="email" placeholder="Your email" required>
+                                <input id="password" type="password" name="password" placeholder="Your password" required>
+                            </fieldset>
+                            <fieldset id="actions">
+                                <input type="submit" id="submit" value="Sign in">
+                                <label><input type="checkbox" checked="checked">Remember me</label>
+                            </fieldset>
+                        </form>
+                    </div>
+            </li>
         </ul></div>
     </div>
-
+<div id="container">
    <section>
     <div class="header">
         <div class="pic-header">
@@ -88,7 +109,9 @@
       <center><h3>Take part in Northern Lights Route!</h3></center>
       <center><input type="button" value="Become an explorer" id="profile-button"></center>
     </section>
+<div id=logininfo>
 
+</div>
         <footer class="footer-distributed">
 
 			       <div class="footer-left">
@@ -148,6 +171,5 @@
 			</div>
 
 		</footer>
-
 </body>
 </html>

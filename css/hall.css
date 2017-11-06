@@ -1,0 +1,152 @@
+#hall-header {
+    background: url('../images/hall.jpg');
+    background-position: 50% 50%;
+}
+.pic-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-header h1 {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 120px;
+    text-shadow: 2px 2px 15px rgba(0,0,0,0.2);
+    padding-bottom: -150px;
+
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+.gold {
+    background: #F6E16F; 
+    padding-left: 30px;
+   
+}
+
+.silver {
+    background: #EAEAEA;
+    padding-left: 30px;
+
+}
+
+.bronze {
+    background: #F7AC62;
+    padding-left: 30px;
+}
+
+#gold {
+  
+    margin: -50px;
+    height: 480px;
+    position: relative;
+    z-index: 10;
+
+}
+
+.circle {
+
+	background: red;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+    border-radius: 200px;
+
+    background-size: cover !important;
+    min-width: 180px;
+    min-height: 180px;
+    
+    
+}
+
+#circle-pic { 
+    background: url('../images/kotik.jpg');
+    max-width: 100%;
+    max-height: 100%;
+    
+}   
+
+button {
+    color: rgba(54, 54, 199);
+    font-size: 20px; 
+    margin-bottom: 68px;
+    margin-top: 5px;
+    border: none;
+    color: darkblue; 
+    background: none; 
+
+}
+
+#circle-pic1 { 
+    background: url('../images/pesik.jpg');
+ 
+}
+#circle-pic2 { 
+    background: url('../images/lisa.jpg');
+}
+
+.hor-card {
+    display: flex;
+    width: 960px;
+    align-items: center;
+    justify-content: space-around;
+    height: 150px;
+    margin: 20px 60px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+#hor-sec {
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hor-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+.hor-circle img {
+    border-radius: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hor-order {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Oswald'
+}
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+.label {
+    font-size: 1em;
+    opacity: 0.5;
+}
+
+/* 
+ *  Only Media
+ */
+
+@media (max-width: 1000px) {
+    .hor-card {
+        width: 100%;
+    }
+    #gold {
+        margin: 0;
+        height: 400px;
+    }
+}
+
+@media (max-width: 500px) {
+    #hor-sec {
+        padding: 0;
+    }
+}
