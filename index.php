@@ -17,27 +17,26 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/myscript.js"></script>
     <script src="js/login.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
-
+    
 
 </head>
 
 <body>
 
+    <div id="container">
         <div id="menu">
         <ul class="topnav">
-
-            <li><a href="#home">HALL OF FAME</a></li>
-            <li><a href="#news">MAP</a></li>
-            <li><a href="#contact">NORTHERN LIGHTS ROUTE</a></li>
-            <li><a href="#contact">OUR STORIES</a></li>
-            <li class="right" id="signup"><a href="#about">REGISTER</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="map.html">MAP</a></li>
+            <li><a href="stories.html">OUR STORIES</a></li>
+            <li><a href="hall.html">HALL OF FAME</a></li>
+            <li class="right"><a href="#about">REGISTER</a></li>
             <li class="right" id="login"><a id="login-trigger" href="#">SIGN IN <span>&#x25BC;</span></a>
                 <div id="login-content">
                         <form action="login.php" method="post">
@@ -52,10 +51,11 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
                         </form>
                     </div>
             </li>
+
         </ul></div>
     </div>
-<div id="container">
-   <section>
+
+   <section id="hero-sec">
     <div class="header">
         <div class="pic-header">
             <img class="pic" src="images/header.png" alt="lights">
@@ -94,24 +94,60 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     </section>
 
     <section>
-<div class="idea">
-  <img src="images/route.png" align="right" width="350px" height="230px">
-  <p class="descr">
-      The Northern Lights Route offers a great experience for<br>
-      You to travel through northern countries and<br>
-      see a unique aurora borellias.
-    </p>
-</div>
+        <div class="col-6">
+            <div class="col-3">
+                    <span id="route-dec">What is Northern&nbsp;Lights&nbsp;Route?</span>
+                    <p class="description">
+                            The Northern Lights Route offers a great experience for
+                            You to travel through northern countries and see a unique aurora borellias. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis venenatis ex, eget ullamcorper diam. Etiam risus nulla, faucibus ut ex id, maximus finibus leo. Donec convallis mauris sed fermentum cursus.
+                        </p>
+            </div>
+            <div class="col-3">
+                    <img class="full-img" src="images/squarrel.jpeg" align="right">
+            </div>
+        </div>
+        </div>
     </section>
-
     <section>
-      <div id="container2">
-      <center><h3>Take part in Northern Lights Route!</h3></center>
-      <center><input type="button" value="Become an explorer" id="profile-button"></center>
-    </section>
-<div id=logininfo>
+            <div class="col-6 opt-bot-marg">
+            <span id="route-dec" class="opt-bot-marg">Most popular places to begin</span>
+            </div>
+        <div class="col-6">
+        <span class="heading-2">Hotels</span>
+        </div>
+    <div class="col-6">
+     <div class="container-places"> 
+         <div class="cards-places col-15"></div>
+         
 
-</div>
+        <div class="cards-places col-15"></div>
+        <div class="cards-places col-15"></div>
+        <div class="cards-places col-15"></div>
+        
+    </div>      
+    
+</section>
+<section>
+    <div class="col-6">
+            <span class="heading-2">Activities</span>
+            </div>
+        <div class="col-6">
+        <div class="container-places">
+            <div class="cards-places col-15"></div>
+            <div class="cards-places col-15"></div>
+            <div class="cards-places col-15"></div>
+            <div class="cards-places col-15"></div>
+        </div>
+    </div>
+</section>
+    <section>
+    <div class="col-6 cta-full-width">
+      <center><span id="route-dec">Take part in Northern Lights Route!</span></center>
+     
+      <center><a href="map.html"><button id="see-map" type="button">See the map</button></a></center> 
+    </div>
+    </section>
+
         <footer class="footer-distributed">
 
 			       <div class="footer-left">
@@ -171,5 +207,8 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 			</div>
 
 		</footer>
+
 </body>
+
+
 </html>
