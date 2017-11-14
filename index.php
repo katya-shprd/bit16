@@ -23,21 +23,22 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    
 
 </head>
 
 <body>
 
     <div id="container">
-        <div id="menu">
+        <div id="menu topnav">
         <ul class="topnav">
-            <li><a href="index.html">HOME</a></li>
+            <li><a href="index.php">HOME</a></li>
             <li><a href="map.html">MAP</a></li>
             <li><a href="stories.html">OUR STORIES</a></li>
-            <li><a href="hall.html">HALL OF FAME</a></li>
+            <li><a href="hall.php">HALL OF FAME</a></li>
             <li class="right"><a href="#about">REGISTER</a></li>
             <li class="right" id="login"><a id="login-trigger" href="#">SIGN IN <span>&#x25BC;</span></a>
+            <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
+
                 <div id="login-content">
                         <form action="login.php" method="post">
                             <fieldset id="inputs">

@@ -1,3 +1,9 @@
+<?php
+/*
+     file: hall.php
+    desc: Hall of Fame page
+*/
+?>
 <!DOCTYPE html>
 <html>
 

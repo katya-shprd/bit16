@@ -141,6 +141,7 @@ img {
     }
     #gold {
         margin: 0;
+        margin-bottom: 72px;
         height: 400px;
     }
 }
