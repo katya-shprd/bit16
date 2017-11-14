@@ -16,6 +16,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
   	<meta name="keywords" content="footer, address, phone, icons" />
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/hall.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/login.js"></script>
 
@@ -27,42 +28,29 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 </head>
 
 <body>
-
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
-
-
     <div id="container">
-        <div id="menu topnav">
+        <div id="myTopnav" class="menu">
         <ul class="topnav">
-            <li><a href="index.php">HOME</a></li>
-            <li><a href="map.html">MAP</a></li>
-            <li><a href="stories.html">OUR STORIES</a></li>
-            <li><a href="hall.php">HALL OF FAME</a></li>
+            <a href="index.php">HOME</a>
+            <a href="map.html">MAP</a>
+            <a href="stories.php">OUR STORIES</a>
+            <a href="hall.php">HALL OF FAME</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
             <li class="right"><a href="#about">REGISTER</a></li>
-            <li class="right" id="login"><a id="login-trigger" href="#">SIGN IN <span>&#x25BC;</span></a>
-            <li><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></li>
-
+            <li class="right" id="login">
+                <a id="login-trigger" href="#">SIGN IN <span>&#x25BC;</span></a>
                 <div id="login-content">
-                        <form action="login.php" method="post">
-                            <fieldset id="inputs">
-                                <input id="email" type="email" name="email" placeholder="Your email" required>
-                                <input id="password" type="password" name="password" placeholder="Your password" required>
-                            </fieldset>
-                            <fieldset id="actions">
-                                <input type="submit" id="submit" value="Sign in">
-                                <label><input type="checkbox" checked="checked">Remember me</label>
-                            </fieldset>
-                        </form>
-                    </div>
+                            <form action="login.php" method="post">
+                                <fieldset id="inputs">
+                                    <input id="email" type="email" name="email" placeholder="Your email" required>
+                                    <input id="password" type="password" name="password" placeholder="Your password" required>
+                                </fieldset>
+                                <fieldset id="actions">
+                                    <input type="submit" id="submit" value="Sign in">
+                                    <label><input type="checkbox" checked="checked">Remember me</label>
+                                </fieldset>
+                            </form>
+                </div>
             </li>
 
         </ul></div>
@@ -129,13 +117,86 @@ function myFunction() {
         <span class="heading-2">Hotels</span>
         </div>
     <div class="col-6">
-     <div class="container-places"> 
-         <div class="cards-places col-15"></div>
-         
+     <div class="container-places">
+        <div class="col-15">
+                <div class="cards-places">
+               <img class="full-img" src="images/mustaparta.jpg">
+            </div>
+            <span class="name-places">Mustaparta</span>
+            <div class="hor-labels">
+            <span><span class="label">city</span> <br> Tornio</span>
+            <span><span class="label">address</span> <br> Keskikatu 24</span>
+            </div>
+            <div id="TA_socialButtonBubbles469" class="TA_socialButtonBubbles">
+                <ul id="k3uQze" class="TA_links PmizNlBWNnhI">
+                <li id="ZoXPLWOYYf" class="o5XprqdTtWji">
+                <a target="_blank" href="https://www.tripadvisor.com/Hotel_Review-g736823-d12215730-Reviews-Hotel_Mustaparta-Tornio_Lapland.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_white-21693-2.png"/></a>
+                </li>
+                </ul>
+                </div>
+                <script src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=469&amp;locationId=12215730&amp;color=white&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
 
-        <div class="cards-places col-15"></div>
-        <div class="cards-places col-15"></div>
-        <div class="cards-places col-15"></div>
+        </div>
+
+        <div class="col-15">
+                <div class="cards-places">
+               <img class="full-img" src="images/mustaparta.jpg">
+            </div>
+            <span class="name-places">Mustaparta</span>
+            <div class="hor-labels">
+            <span><span class="label">city</span> <br> Tornio</span>
+            <span><span class="label">address</span> <br> Keskikatu 24</span>
+            </div>
+            <div id="TA_socialButtonBubbles469" class="TA_socialButtonBubbles">
+                <ul id="k3uQze" class="TA_links PmizNlBWNnhI">
+                <li id="ZoXPLWOYYf" class="o5XprqdTtWji">
+                <a target="_blank" href="https://www.tripadvisor.com/Hotel_Review-g736823-d12215730-Reviews-Hotel_Mustaparta-Tornio_Lapland.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_white-21693-2.png"/></a>
+                </li>
+                </ul>
+                </div>
+                <script src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=469&amp;locationId=12215730&amp;color=white&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+
+        </div>
+
+        <div class="col-15">
+                <div class="cards-places">
+               <img class="full-img" src="images/mustaparta.jpg">
+            </div>
+            <span class="name-places">Mustaparta</span>
+            <div class="hor-labels">
+            <span><span class="label">city</span> <br> Tornio</span>
+            <span><span class="label">address</span> <br> Keskikatu 24</span>
+            </div>
+            <div id="TA_socialButtonBubbles469" class="TA_socialButtonBubbles">
+                <ul id="k3uQze" class="TA_links PmizNlBWNnhI">
+                <li id="ZoXPLWOYYf" class="o5XprqdTtWji">
+                <a target="_blank" href="https://www.tripadvisor.com/Hotel_Review-g736823-d12215730-Reviews-Hotel_Mustaparta-Tornio_Lapland.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_white-21693-2.png"/></a>
+                </li>
+                </ul>
+                </div>
+                <script src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=469&amp;locationId=12215730&amp;color=white&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+
+        </div>
+
+        <div class="col-15">
+                <div class="cards-places">
+               <img class="full-img" src="images/mustaparta.jpg">
+            </div>
+            <span class="name-places">Mustaparta</span>
+            <div class="hor-labels">
+            <span><span class="label">city</span> <br> Tornio</span>
+            <span><span class="label">address</span> <br> Keskikatu 24</span>
+            </div>
+            <div id="TA_socialButtonBubbles469" class="TA_socialButtonBubbles">
+                <ul id="k3uQze" class="TA_links PmizNlBWNnhI">
+                <li id="ZoXPLWOYYf" class="o5XprqdTtWji">
+                <a target="_blank" href="https://www.tripadvisor.com/Hotel_Review-g736823-d12215730-Reviews-Hotel_Mustaparta-Tornio_Lapland.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_white-21693-2.png"/></a>
+                </li>
+                </ul>
+                </div>
+                <script src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=469&amp;locationId=12215730&amp;color=white&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+
+        </div>
         
     </div>      
     
@@ -220,6 +281,16 @@ function myFunction() {
 			</div>
 
 		</footer>
+        <script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 
 </body>
 
