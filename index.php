@@ -28,6 +28,18 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 
 <body>
 
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+
     <div id="container">
         <div id="menu topnav">
         <ul class="topnav">
