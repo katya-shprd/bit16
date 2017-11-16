@@ -14,7 +14,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <meta name="viewport" content="width=device-width, initial-scale=1">
   	<meta name="keywords" content="footer, address, phone, icons" />
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-  
+  <!-- блок каких-то его бутстрапов которые потом уберу -->
     <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/puritym/css/style.css">
