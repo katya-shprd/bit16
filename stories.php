@@ -14,11 +14,18 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <meta name="viewport" content="width=device-width, initial-scale=1">
   	<meta name="keywords" content="footer, address, phone, icons" />
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-      <link rel="stylesheet" href="css/footer.css">
+  
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/puritym/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+ 
+  <link rel="stylesheet" href="css/footer.css">
       <link rel="stylesheet" href="css/hall.css">
       <link rel="stylesheet" href="css/stories.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/myscript.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
@@ -30,33 +37,8 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 
 <body>
 
-<div id="container">
-<div id="myTopnav" class="menu">
-<ul class="topnav">
-    <a href="index.php">HOME</a>
-    <a href="map.html">MAP</a>
-    <a href="stories.php">OUR STORIES</a>
-    <a href="hall.php">HALL OF FAME</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    <li class="right"><a href="#about">REGISTER</a></li>
-    <li class="right" id="login">
-        <a id="login-trigger" href="#">SIGN IN <span>&#x25BC;</span></a>
-        <div id="login-content">
-                    <form action="login.php" method="post">
-                        <fieldset id="inputs">
-                            <input id="email" type="email" name="email" placeholder="Your email" required>
-                            <input id="password" type="password" name="password" placeholder="Your password" required>
-                        </fieldset>
-                        <fieldset id="actions">
-                            <input type="submit" id="submit" value="Sign in">
-                            <label><input type="checkbox" checked="checked">Remember me</label>
-                        </fieldset>
-                    </form>
-        </div>
-    </li>
+<?php include ("nav.html") ?> 
 
-</ul></div>
-</div>
     <section>
             <div class="header">
                 <div class="pic-header" id="stories-header">
@@ -77,6 +59,60 @@ function myFunction() {
     }
 }
 </script>
+
+<h3>Stories</h3>
+<div class="form-group row">
+ <div class="col-xs-2">
+  <label for="searchstory">Search stories</label>
+  <input type="text" class="form-control input-sm" id="searchstory">
+ </div>
+ <div class="col-xs-2">
+  <label for="type">Select type</label>
+  <select class="form-control input-sm" id="type">
+	<option value="">-All-</option>
+	<option value="video">Video</option>
+	<option value="audio">Audio</option>
+	<option value="written">Text</option>
+  </select>
+ </div>
+</div>
+<table class="table table-stripped">
+ <thead>
+	<tr>
+		<th>Story Title</th><th>Story Type</th><th>Link</th>
+	</tr>
+ </thead>
+ <tbody id="stories">
+ </tbody>
+</table>
+
+
+<div class="row">
+  <div class="col-sm-4">
+	<h5>Companies</h5>
+	
+	<p>
+	Some examples of displaying results from database in html-page. PHP-scripts result JSON-data that is available for any
+	user interface - like this HTML-page with jQuery. When the page is loaded, there will be the default listing of results
+	on the right side here.
+	</p>
+	
+	<p>
+	Same listing in a <button id="cmpTable" type="button" class="btn btn-default">table format</button>.
+	</p>
+	<p>
+	Search companies by communityname to see which companies operate
+	on that area.
+		<input type="text" id="search" />
+	</p>
+  </div>
+  <div class="col-sm-8">
+   <h5>Results from database</h5>
+   <div id="results"></div>
+  </div>
+</div>
+
+<?php include ("footer.html")?>
 
 </body>
 

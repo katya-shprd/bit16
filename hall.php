@@ -31,33 +31,7 @@
 
 <body>
 
-<div id="container">
-<div id="myTopnav" class="menu">
-<ul class="topnav">
-    <a href="index.php">HOME</a>
-    <a href="map.html">MAP</a>
-    <a href="stories.php">OUR STORIES</a>
-    <a href="hall.php">HALL OF FAME</a>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    <li class="right"><a href="#about">REGISTER</a></li>
-    <li class="right" id="login">
-        <a id="login-trigger" href="#">SIGN IN <span>&#x25BC;</span></a>
-        <div id="login-content">
-                    <form action="login.php" method="post">
-                        <fieldset id="inputs">
-                            <input id="email" type="email" name="email" placeholder="Your email" required>
-                            <input id="password" type="password" name="password" placeholder="Your password" required>
-                        </fieldset>
-                        <fieldset id="actions">
-                            <input type="submit" id="submit" value="Sign in">
-                            <label><input type="checkbox" checked="checked">Remember me</label>
-                        </fieldset>
-                    </form>
-        </div>
-    </li>
-
-</ul></div>
-</div>
+<?php include ("nav.html") ?> 
 
     <section>
         <div class="header">
@@ -143,65 +117,7 @@
 
 </section>
 
-<footer class="footer-distributed">
-        
-                           <div class="footer-left">
-        
-                                    <h3>Northern Lights Route</h3>
-        
-                                        <p class="footer-links">
-                                              <a href="#">Hall of Fame</a>
-                                              ·
-                                              <a href="#">Map</a>
-                                              ·
-                                              <a href="#">Northern Lights Route</a>
-                                              ·
-                                              <a href="#">Our stories</a>
-                                              ·
-                                              <a href="#">Contact</a>
-                                        </p>
-        
-                                   <p class="footer-company-name">Northern Lights Route &copy; 2017</p>
-                    </div>
-        
-                    <div class="footer-center">
-        
-                        <div>
-                            <i class="fa fa-map-marker"></i>
-                            <p><span>1B Kirkkokatu</span> Tornio, Finland</p>
-                        </div>
-        
-                        <div>
-                            <i class="fa fa-phone"></i>
-                            <p>+1 555 123456</p>
-                        </div>
-        
-                        <div>
-                            <i class="fa fa-envelope"></i>
-                            <p><a href="#">support@company.com</a></p>
-                        </div>
-        
-                    </div>
-        
-                    <div class="footer-right">
-        
-                        <p class="footer-company-about">
-                            <span>About the company</span>
-                            We are providing an opportunity to go through the Northern Lights Route for people from different countries. The route starts from Tornio to Tromsö or other way around.
-                        </p>
-        
-                        <div class="footer-icons">
-        
-                            <a href="https://www.facebook.com/northernlightsroute/"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-        
-                        </div>
-        
-                    </div>
-        
-                </footer>
+<?php include ("footer.html")?>
         
                 <script>
 function myFunction() {
