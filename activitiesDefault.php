@@ -1,14 +1,14 @@
 <?php
 /*
-	file:	ourstories_example/companiesDefault.php
-	desc:	Returns the list of companies as JSON
+	file:	activitiesDefault.php
+	desc:	Returns the list of activities as JSON
 */
 header("Access-Control-Allow-Origin: * "); //all the UIs can access
 if(!empty($_GET['search'])) $search=$_GET['search'];else $search='%%';
 include('db.php');
-$sql="SELECT * FROM company ";
-$sql.="WHERE (companyName LIKE '%%$search%%' OR city LIKE '%%$search%%') ";
-$sql.=" ORDER BY companyName";
+$sql="SELECT * FROM activity ";
+$sql.="WHERE (activityName LIKE '%%$search%%' OR activityKeyword LIKE '%%$search%%') ";
+$sql.=" ORDER BY activityName";
 $result = $conn->query($sql);
 $output=array();
 while($row=$result->fetch_assoc()){

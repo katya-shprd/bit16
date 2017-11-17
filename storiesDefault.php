@@ -1,6 +1,6 @@
 <?php
 /*
-	file:	ourstories_example/storiesDefault.php
+	file:	storiesDefault.php
 	desc:	Returns the list of companies as JSON
 */
 header("Access-Control-Allow-Origin: * "); //all the UIs can access
