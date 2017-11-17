@@ -113,5 +113,4 @@ function myFunction() {
 <?php include ("footer.html")?>
 
 </body>
-
 </html>

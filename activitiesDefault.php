@@ -3,7 +3,7 @@
 	file:	activitiesDefault.php
 	desc:	Returns the list of activities as JSON
 */
-header("Access-Control-Allow-Origin: * "); //all the UIs can access
+header("Access-Control-Allow-Origin: * ");
 if(!empty($_GET['search'])) $search=$_GET['search'];else $search='%%';
 include('db.php');
 $sql="SELECT * FROM activity ";

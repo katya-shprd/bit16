@@ -1,7 +1,7 @@
 <?php
 /*
 	file:	storiesDefault.php
-	desc:	Returns the list of companies as JSON
+	desc:	Returns the list of stories as JSON
 */
 header("Access-Control-Allow-Origin: * "); //all the UIs can access
 if(!empty($_GET['search'])) $search=$_GET['search'];else $search='%%';

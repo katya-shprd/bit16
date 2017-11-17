@@ -1,6 +1,6 @@
 <?php
 /*
-	file:	ourstories_example/selectedStory.php
+	file:	selectedStory.php
 	desc:	Returns the selected story as JSON
 */
 header("Access-Control-Allow-Origin: * "); //all the UIs can access
