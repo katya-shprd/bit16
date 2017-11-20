@@ -1,10 +1,10 @@
 <?php
 /*
-	file:	stories.php
+	file:	companies.php
 	desc:	Our Stories page
 */
-if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
-?><!DOCTYPE html>
+if(!empty($_GET['page'])) $page=$_GET['page'];else $page='' ?>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -42,7 +42,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <section>
             <div class="header">
                 <div class="pic-header" id="stories-header">
-                    <h1>Our Stories</h1>
+                    <h1>Companies</h1>
                 </div>
             </div>
     
@@ -60,53 +60,55 @@ function myFunction() {
 }
 </script>
 
-<h3>Stories</h3>
-<div class="form-group row">
- <div class="col-xs-2">
-  <label for="searchstory">Search stories</label>
-  <input type="text" class="form-control input-sm" id="searchstory">
- </div>
- <div class="col-xs-2">
-  <label for="type">Select type</label>
-  <select class="form-control input-sm" id="type">
-	<option value="">-All-</option>
-	<option value="video">Video</option>
-	<option value="audio">Audio</option>
-	<option value="written">Text</option>
-  </select>
- </div>
-</div>
-<table class="table table-stripped">
- <thead>
-	<tr>
-		<th>Story Title</th><th>Story Type</th><th>Link</th>
-	</tr>
- </thead>
- <tbody id="stories">
- </tbody>
-</table>
-
-<div id="showStory" class="modal fade" role="dialog">
- <div class="modal-dialog">
-	<!-- Modal content-->
-	<div class="modal-content">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal">&times;</button>
-			<h4 class="modal-title">Story</h4>
-		</div>
-		<div class="modal-body">
-			<h3 id="storyTitle"></h3>
-			<p id="storyDescription"></p>
-			<p id="storyLink"></p>
-			
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		</div>
-	</div>
+<div class="row">
+  <div class="col-sm-4">
+	<h5>Companies</h5>
+	
+	<p>
+	Some examples of displaying results from database in html-page. PHP-scripts result JSON-data that is available for any
+	user interface - like this HTML-page with jQuery. When the page is loaded, there will be the default listing of results
+	on the right side here.
+	</p>
+	
+	<p>
+	Same listing in a <button id="cmpTable" type="button" class="btn btn-default">table format</button>.
+	</p>
+	<p>
+	Search companies by communityname to see which companies operate
+	on that area.
+		<input type="text" id="search" />
+	</p>
+  </div>
+  <div class="col-sm-8">
+   <h5>Results from database</h5>
+   <div id="results"></div>
   </div>
 </div>
 
+<div class="row">
+  <div class="col-sm-4">
+	<h5>Activities</h5>
+	
+	<p>
+	Some examples of displaying results from database in html-page. PHP-scripts result JSON-data that is available for any
+	user interface - like this HTML-page with jQuery. When the page is loaded, there will be the default listing of results
+	on the right side here.
+	</p>
+	
+	<p>
+	Same listing in a <button id="actTable" type="button" class="btn btn-default">table format</button>.
+	</p>
+	<p>
+	Search companies by communityname to see which companies operate
+	on that area.
+		<input type="text" id="actsearch" />
+	</p>
+  </div>
+  <div class="col-sm-8">
+   <h5>Results from database</h5>
+   <div id="activities"></div>
+  </div>
+</div>
 
 <?php include ("footer.html")?>
 

@@ -17,6 +17,9 @@
 		</style>
 	</head>
 	<body>
+
+			<?php include ("nav.html") ?> 
+
 	 <div class="pageContainer">
         <div class="addressContainer">
             <h1>OurStories</h1>
@@ -43,5 +46,6 @@
 		
 		
 	  </div>
+	  <?php include ("footer.html")?>
 	</body>
 </html>
