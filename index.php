@@ -5,7 +5,6 @@
 */
 if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 ?>
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -14,7 +13,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   	<meta name="keywords" content="footer, address, phone, icons" />
-    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+    <link href="css/mystyle.css" rel="stylesheet">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/hall.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -24,12 +23,12 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
+    
 </head>
 
 <body>
 <?php include ("nav.html") ?> 
-
+    
    <section id="hero-sec">
     <div class="header">
         <div class="pic-header">
@@ -78,7 +77,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
                         </p>
             </div>
             <div class="col-3">
-                    <img class="full-img" src="images/squarrel.jpeg" align="right">
+                    <img class="full-img" id="squirrel-img" src="images/squarrel.jpeg" align="right">
             </div>
         </div>
         </div>
@@ -87,6 +86,8 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
             <div class="col-6 opt-bot-marg">
             <span id="route-dec" class="opt-bot-marg">Most popular places to begin</span>
             </div>
+       
+       
         <div class="col-6">
         <span class="heading-2">Hotels</span>
         </div>
@@ -96,7 +97,48 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
                 <div class="cards-places">
                <img class="full-img" src="images/mustaparta.jpg">
             </div>
-            <span class="name-places">Mustaparta</span>
+            <span class="name-places">Mustaparta - Finland</span>
+            <div class="hor-labels">
+            <span><span class="label">city</span> <br> Tornio, 95400</span>
+            <span><span class="label">address</span> <br> Keskikatu 24</span>
+            </div>
+            <div id="TA_socialButtonBubbles469" class="TA_socialButtonBubbles">
+                <ul id="k3uQze" class="TA_links PmizNlBWNnhI">
+                <li id="ZoXPLWOYYf" class="o5XprqdTtWji">
+                <a target="_blank" href="https://www.tripadvisor.com/Hotel_Review-g736823-d12215730-Reviews-Hotel_Mustaparta-Tornio_Lapland.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_white-21693-2.png"/></a>
+                </li>
+                </ul>
+                </div>
+                <script src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=469&amp;locationId=12215730&amp;color=white&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+
+        </div>
+
+        <div class="col-15">
+                <div class="cards-places">
+               <img class="full-img" src="images/pello.png">
+            </div>
+            <span class="name-places">Lempeän Suvanto - Finland</span>
+            <div class="hor-labels">
+            <span><span class="label">city</span> <br> Pello, 95700</span>
+            <span><span class="label">address</span> <br> Väylänvarrentie 27A</span>
+            </div>
+            <div id="TA_socialButtonBubbles993" class="TA_socialButtonBubbles">
+            <ul id="mJ9Uhktex" class="TA_links muviuxj7rOj">
+            <li id="OIu5z9l8wv" class="mNf08eOYGYe">
+            <a target="_blank" href="https://www.tripadvisor.com/Hotel_Review-g776235-d10403867-Reviews-Lempean_Suvanto_Resort-Pello_Lapland.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+            </li>
+            </ul>
+            </div>
+            <script src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=993&amp;locationId=10403867&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+            
+
+        </div>
+
+        <div class="col-15">
+                <div class="cards-places">
+               <img class="full-img" src="images/.jpg">
+            </div>
+            <span class="name-places">none</span>
             <div class="hor-labels">
             <span><span class="label">city</span> <br> Tornio</span>
             <span><span class="label">address</span> <br> Keskikatu 24</span>
@@ -114,79 +156,91 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 
         <div class="col-15">
                 <div class="cards-places">
-               <img class="full-img" src="images/mustaparta.jpg">
+               <img class="full-img" src="images/enter_city_hotel.jpg">
             </div>
-            <span class="name-places">Mustaparta</span>
+            <span class="name-places">Enter City Hotel - Norway</span>
             <div class="hor-labels">
-            <span><span class="label">city</span> <br> Tornio</span>
-            <span><span class="label">address</span> <br> Keskikatu 24</span>
+            <span><span class="label">city</span> <br> Tromsö, 9008</span>
+            <span><span class="label">address</span> <br> Grønnegata 48</span>
             </div>
-            <div id="TA_socialButtonBubbles469" class="TA_socialButtonBubbles">
-                <ul id="k3uQze" class="TA_links PmizNlBWNnhI">
-                <li id="ZoXPLWOYYf" class="o5XprqdTtWji">
-                <a target="_blank" href="https://www.tripadvisor.com/Hotel_Review-g736823-d12215730-Reviews-Hotel_Mustaparta-Tornio_Lapland.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_white-21693-2.png"/></a>
-                </li>
-                </ul>
-                </div>
-                <script src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=469&amp;locationId=12215730&amp;color=white&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
-
-        </div>
-
-        <div class="col-15">
-                <div class="cards-places">
-               <img class="full-img" src="images/mustaparta.jpg">
+            <div id="TA_socialButtonBubbles247" class="TA_socialButtonBubbles">
+            <ul id="59PGloJ" class="TA_links IgSmAqZah">
+            <li id="Ee7eKw7i" class="S7yRvhC">
+            <a target="_blank" href="https://www.tripadvisor.com/Hotel_Review-g190475-d1230601-Reviews-Enter_City_Hotel-Tromso_Troms_Northern_Norway.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
+            </li>
+            </ul>
             </div>
-            <span class="name-places">Mustaparta</span>
-            <div class="hor-labels">
-            <span><span class="label">city</span> <br> Tornio</span>
-            <span><span class="label">address</span> <br> Keskikatu 24</span>
-            </div>
-            <div id="TA_socialButtonBubbles469" class="TA_socialButtonBubbles">
-                <ul id="k3uQze" class="TA_links PmizNlBWNnhI">
-                <li id="ZoXPLWOYYf" class="o5XprqdTtWji">
-                <a target="_blank" href="https://www.tripadvisor.com/Hotel_Review-g736823-d12215730-Reviews-Hotel_Mustaparta-Tornio_Lapland.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_white-21693-2.png"/></a>
-                </li>
-                </ul>
-                </div>
-                <script src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=469&amp;locationId=12215730&amp;color=white&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
-
-        </div>
-
-        <div class="col-15">
-                <div class="cards-places">
-               <img class="full-img" src="images/mustaparta.jpg">
-            </div>
-            <span class="name-places">Mustaparta</span>
-            <div class="hor-labels">
-            <span><span class="label">city</span> <br> Tornio</span>
-            <span><span class="label">address</span> <br> Keskikatu 24</span>
-            </div>
-            <div id="TA_socialButtonBubbles469" class="TA_socialButtonBubbles">
-                <ul id="k3uQze" class="TA_links PmizNlBWNnhI">
-                <li id="ZoXPLWOYYf" class="o5XprqdTtWji">
-                <a target="_blank" href="https://www.tripadvisor.com/Hotel_Review-g736823-d12215730-Reviews-Hotel_Mustaparta-Tornio_Lapland.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_white-21693-2.png"/></a>
-                </li>
-                </ul>
-                </div>
-                <script src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=469&amp;locationId=12215730&amp;color=white&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+            <script src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=247&amp;locationId=1230601&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+            
 
         </div>
         
     </div>      
     
 </section>
+<div class="centered col-6">
+        <h3><a href='https://www.booking.com/'>See more on booking.com</a></h3>
+   
+</div>
+<div class="magic">
 <section>
-    <div class="col-6">
-            <span class="heading-2">Activities</span>
-            </div>
-        <div class="col-6">
-        <div class="container-places">
-            <div class="cards-places col-15"></div>
-            <div class="cards-places col-15"></div>
-            <div class="cards-places col-15"></div>
-            <div class="cards-places col-15"></div>
-        </div>
+<div class="col-6">
+<span class="heading-2">Activities</span>
+</div>
+<div class="col-6">
+<div class="container-places">
+<div class="col-15">
+        <div class="cards-places">
+       <img class="full-img" src="images/farm_escape.jpg">
     </div>
+    <span class="name-places">Farm Escape</span>
+    <div class="hor-labels">
+    <span><span class="label">city</span> <br> Tornio, 95540</span>
+    <span><span class="label">address</span> <br>Mustajärventie 456</span> 
+    </div>
+    
+
+</div>
+
+<div class="col-15">
+        <div class="cards-places">
+       <img class="full-img" src="images/.jpg">
+    </div>
+    <span class="name-places">none</span>
+    <div class="hor-labels">
+    <span><span class="label">city</span> <br> Tornio</span>
+    <span><span class="label">address</span> <br> address</span>
+    </div>
+
+</div>
+
+<div class="col-15">
+<div class="cards-places">
+<img class="full-img" src="images/.jpg">
+</div>
+<span class="name-places">none</span>
+<div class="hor-labels">
+<span><span class="label">city</span> <br> Tornio</span>
+<span><span class="label">address</span> <br> address</span>
+</div>
+
+</div>
+
+<div class="col-15">
+<div class="cards-places">
+<img class="full-img" src="images/.jpg">
+</div>
+<span class="name-places">none</span>
+<div class="hor-labels">
+<span><span class="label">city</span> <br> Tornio</span>
+<span><span class="label">address</span> <br> address</span>
+</div>
+
+</div>
+
+
+
+</div>      
 </section>
     <section>
     <div class="col-6 cta-full-width">
