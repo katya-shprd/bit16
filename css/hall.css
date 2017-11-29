@@ -72,10 +72,16 @@ button {
     color: rgba(54, 54, 199);
     font-size: 20px; 
     margin-bottom: 68px;
-    margin-top: 5px;
+    margin-top: 1px;
     border: none;
     color: darkblue; 
     background: none; 
+    border-radius: 5px; 
+    background-color: #fafafa; 
+    -webkit-box-shadow: 0px 3px 30px -4px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 3px 30px -4px rgba(0,0,0,0.32);
+    box-shadow: 0px 3px 30px -4px rgba(0,0,0,0.32);
+    border: none;
 
 }
 

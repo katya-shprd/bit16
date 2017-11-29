@@ -16,6 +16,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <link href="css/mystyle.css" rel="stylesheet">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/hall.css">
+    <link rel="stylesheet" href="css/form.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/login.js"></script>
 
@@ -89,7 +90,10 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
        
        
         <div class="col-6">
-        <span class="heading-2">Hotels</span>
+        <span class="heading-2">Hotels</span><br>
+        </div>
+        <div class="col-6">
+        <a href='https://www.booking.com/'>Click to open booking.com</a>
         </div>
     <div class="col-6">
      <div class="container-places">
@@ -97,7 +101,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
                 <div class="cards-places">
                <img class="full-img" src="images/mustaparta.jpg">
             </div>
-            <span class="name-places">Mustaparta - Finland</span>
+            <span class="name-places">Hotel Mustaparta - Finland</span>
             <div class="hor-labels">
             <span><span class="label">city</span> <br> Tornio, 95400</span>
             <span><span class="label">address</span> <br> Keskikatu 24</span>
@@ -136,21 +140,22 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 
         <div class="col-15">
                 <div class="cards-places">
-               <img class="full-img" src="images/.jpg">
+               <img class="full-img" src="images/river.jpg">
             </div>
-            <span class="name-places">none</span>
+            <span class="name-places">Lapland Guest House - Sweden</span>
             <div class="hor-labels">
-            <span><span class="label">city</span> <br> Tornio</span>
-            <span><span class="label">address</span> <br> Keskikatu 24</span>
+            <span><span class="label">city</span> <br> Pajala 984 32</span>
+            <span><span class="label">address</span> <br>2 Soukolovaegen</span>
             </div>
-            <div id="TA_socialButtonBubbles469" class="TA_socialButtonBubbles">
-                <ul id="k3uQze" class="TA_links PmizNlBWNnhI">
-                <li id="ZoXPLWOYYf" class="o5XprqdTtWji">
-                <a target="_blank" href="https://www.tripadvisor.com/Hotel_Review-g736823-d12215730-Reviews-Hotel_Mustaparta-Tornio_Lapland.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_white-21693-2.png"/></a>
-                </li>
-                </ul>
-                </div>
-                <script src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=469&amp;locationId=12215730&amp;color=white&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+            <div id="TA_socialButtonBubbles920" class="TA_socialButtonBubbles">
+            <ul id="XYWwsw1" class="TA_links tO7NYsv35L8">
+            <li id="wSZtmDHHgL" class="K0CBAss">
+            <a target="_blank" href="https://www.tripadvisor.com/Hotel_Review-g670194-d7623994-Reviews-Hotel_Lapland_River-Pajala_Norrbotten_County.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_white-21693-2.png"/></a>
+            </li>
+            </ul>
+            </div>
+            <script src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=920&amp;locationId=7623994&amp;color=white&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
+            
 
         </div>
 
@@ -178,15 +183,15 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     </div>      
     
 </section>
-<div class="centered col-6">
-        <h3><a href='https://www.booking.com/'>See more on booking.com</a></h3>
-   
-</div>
 <div class="magic">
 <section>
 <div class="col-6">
 <span class="heading-2">Activities</span>
 </div>
+    <div class="col-6">
+        <a href='companies.php'>Click to see more <br> </a>
+    </div>
+
 <div class="col-6">
 <div class="container-places">
 <div class="col-15">
@@ -198,61 +203,63 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <span><span class="label">city</span> <br> Tornio, 95540</span>
     <span><span class="label">address</span> <br>Mustajärventie 456</span> 
     </div>
-    
-
 </div>
 
 <div class="col-15">
         <div class="cards-places">
-       <img class="full-img" src="images/.jpg">
+       <img class="full-img" src="images/skiing.jpg">
     </div>
-    <span class="name-places">none</span>
+    <span class="name-places">Skiing in Kemi - Finland</span>
     <div class="hor-labels">
-    <span><span class="label">city</span> <br> Tornio</span>
-    <span><span class="label">address</span> <br> address</span>
+    <span><span class="label">city</span> <br> Kemi, 95100</span>
+    <span><span class="label">address</span> <br> Kauppakatu 5</span>
     </div>
-
 </div>
 
 <div class="col-15">
 <div class="cards-places">
-<img class="full-img" src="images/.jpg">
+<img class="full-img" src="images/camping.jpg">
 </div>
-<span class="name-places">none</span>
+<span class="name-places">Camping tour - Norway</span>
 <div class="hor-labels">
-<span><span class="label">city</span> <br> Tornio</span>
-<span><span class="label">address</span> <br> address</span>
+<span><span class="label">city</span> <br> Tromsö, 9008</span>
+<span><span class="label">address</span> <br> Gronnegata 45</span>
 </div>
-
 </div>
 
 <div class="col-15">
 <div class="cards-places">
-<img class="full-img" src="images/.jpg">
+<img class="full-img" src="images/snowmobile.jpg">
 </div>
-<span class="name-places">none</span>
+<span class="name-places">Snowmobile - Sweden</span>
 <div class="hor-labels">
-<span><span class="label">city</span> <br> Tornio</span>
-<span><span class="label">address</span> <br> address</span>
+<span><span class="label">city</span> <br> Haparanda, 953 32 </span>
+<span><span class="label">address</span> <br> Storgatan 63</span>
 </div>
-
-</div>
-
-
-
 </div>      
 </section>
-    <section>
+
+
+</div>
+   <section>
     <div class="col-6 cta-full-width">
       <center><span id="route-dec">Take part in Northern Lights Route!</span></center>
-     
-      <center><a href="map.html"><button id="see-map" type="button">See the map</button></a></center> 
+     <br>
+      <center><a href="map.php"><input type="submit" value="See the map"/></a></center> 
     </div>
     </section>
 
-    <?php include ("footer.html")?>
-    
-        <script>
+<div class="col-6">
+    <div class="col-15">
+    <span class="heading-2">Still have some questions? <br>Contact us</span>
+    </div>
+
+    <div class="col-15">
+    <?php include ("contact-form.php")?>
+    </div>
+</div>
+<?php include ("footer.html")?>
+<script>
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {

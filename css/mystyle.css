@@ -104,7 +104,7 @@ ul.topnav li.right {float: right;}
     min-width: 200px;
     margin: 0 20px;
     margin-bottom: 72px;
-    padding: 20px 10px 40px 10px;
+    padding: 20px 0px 40px 0px;
 }
 .container {
     display: flex;
@@ -492,6 +492,7 @@ nav ul {
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
   box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+  margin-top: 1.5em;
 
 }
 
@@ -500,6 +501,7 @@ nav ul {
   width: 100%;
   justify-content: center;
   flex-direction: row;
+ 
 }
 
 .opt-bot-marg {
@@ -537,13 +539,12 @@ nav ul {
   height: 60%;
 }
 .cta-full-width {
-  background: #C7F2E9;
-  height: 320px;
+  height: 250px;
   display: flex;
-  border-radius: 10px;
-  align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin-top: 8em; 
+  margin-bottom: -9em;
 }
 #hero-sec {
   height: 100vh;
@@ -611,6 +612,7 @@ nav ul {
   justify-content: center;
   align-items:  center;
 }
+
 
  @media screen and (max-width: 640px) {
   .topnav a {display: none;}
