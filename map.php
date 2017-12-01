@@ -20,31 +20,34 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/login.js"></script>
 
+
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-    
+
 
 		<title>Map</title>
 		<!-- Bootstrap core CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">	
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/mapstyle.css" rel="stylesheet">
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJyMRA0og8zyH1WiqCVTOjC6CBVfDrEak"></script>
 		<script src="js/jquery.googlemap.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/myapp.js"></script>
+    <script type="text/javascript" src="js/gmaps.js"></script>
+    <script src="js/myRoute.js"></script>
 
 				<style>
 					#map {height: 800px; width: 600px; }
 				</style>
 	</head>
-	
-	
+
+
 	<body>
 
-			<?php include ("nav.html") ?> 
+			<?php include ("nav.html") ?>
 
 			<script>
 function myFunction() {
@@ -72,16 +75,16 @@ function myFunction() {
 				<input type="submit" value="Show" />
 			</form>
         </div>
-    
+
         <div class="embedContainer">
             <div class="googleMap">
 				<h2>Map</h2>
 				<div id="map"></div>
 			</div>
         </div>
-		
-		
-		
+
+
+
 	  </div>
 	  <?php include ("footer.html")?>
 	</body>
