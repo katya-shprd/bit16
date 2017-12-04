@@ -28,21 +28,59 @@
 
 
 
+
 /*----------------------------------------------------------------------------------------------------------------*\
     MAP
 \*----------------------------------------------------------------------------------------------------------------*/
 .embedContainer {
+    
+    display: flex;
+    align-items: center;
     height: 600px;
     width: 100%;
     padding-bottom: 25%;
     overflow: hidden;
     position: relative;
+    
 }
             
 .embedContainer .googleMap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    
+}
+#map-header {
+    display: flex;
+    background: url('../images/map.jpg');
+    background-position: 50% 50%;
+    background-size: cover;
+    align-items: center;
+    margin-bottom: -11em;
+}
+.select-area {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+select {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 25px;
+    
+}
+input[type="submit"] {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+#search {
+    margin-bottom: 2em;
 }

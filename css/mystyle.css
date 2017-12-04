@@ -38,6 +38,9 @@ ul.topnav li a {
 ul.topnav li a:hover {
     text-decoration: underline;
 }
+.topnav a:hover {
+  color:#A3F7D9 !important
+}
 
 ul.topnav li a:hover:not(.active) {background-color: rgb(7, 3, 63)}
 
@@ -471,7 +474,7 @@ nav ul {
 .heading-2 {
   font-family: 'Lato', sans-serif;
   font-size: 32px;
-  margin-bottom: 1em;
+  margin-bottom: em;
   margin-top: 1em;
 }
 
