@@ -26,8 +26,6 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-
-		<title>Map</title>
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/mapstyle.css" rel="stylesheet">
@@ -48,8 +46,39 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 	<body>
 
 			<?php include ("nav.html") ?>
+			<section>
+            <div class="header">
+                <div class="pic-header" id="map-header">
+                    <h1>MAP</h1>
+                </div>
+            </div>
+    
+     
+    </section>
+	 <div class="pageContainer">
+        <div class="addressContainer">
 
-			<script>
+			<spanc class="select-area">Please, select area</span>
+			<form id="search">
+				<select id="area">
+					<option value=''>-Select-</option>
+					<option value='TORNIO'>Tornio</option>
+					<option value='YLITORNIO'>Ylitornio</option>
+					<option value='PELLO'>Pello</option>
+					<option value='Tromsø'>Tromsø</option>
+				</select>
+				<input type="submit" value="Show" />
+			</form>
+        </div>
+
+        <div class="embedContainer">
+            <div class="googleMap">
+				<div id="map"></div>
+			</div>
+        </div>
+	  </div>
+	  <?php include ("footer.html")?>
+	  <script>
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -59,33 +88,5 @@ function myFunction() {
     }
 }
 </script>
-
-	 <div class="pageContainer">
-        <div class="addressContainer">
-            <h1>OurStories</h1>
-			<h2>Select area</h3>
-			<form id="search">
-				<select id="area">
-					<option value=''>-Select-</option>
-					<option value='TORNIO'>TORNIO</option>
-					<option value='YLITORNIO'>YLITORNIO</option>
-					<option value='PELLO'>PELLO</option>
-					<option value='Tromsø'>Tromsø</option>
-				</select>
-				<input type="submit" value="Show" />
-			</form>
-        </div>
-
-        <div class="embedContainer">
-            <div class="googleMap">
-				<h2>Map</h2>
-				<div id="map"></div>
-			</div>
-        </div>
-
-
-
-	  </div>
-	  <?php include ("footer.html")?>
 	</body>
 </html>

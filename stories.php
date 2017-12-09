@@ -23,6 +23,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
   <link rel="stylesheet" href="css/footer.css">
       <link rel="stylesheet" href="css/hall.css">
       <link rel="stylesheet" href="css/stories.css">
+      <link rel="stylesheet" href="css/mapstyle.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/login.js"></script>
     <script src="js/myscript.js"></script>
@@ -49,33 +50,30 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
      
     </section>
     
-    <script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
+ 
 
-<h3>Stories</h3>
-<div class="form-group row">
- <div class="col-xs-2">
-  <label for="searchstory">Search stories</label>
-  <input type="text" class="form-control input-sm" id="searchstory">
- </div>
- <div class="col-xs-2">
-  <label for="type">Select type</label>
-  <select class="form-control input-sm" id="type">
-	<option value="">-All-</option>
-	<option value="video">Video</option>
-	<option value="audio">Audio</option>
-	<option value="written">Text</option>
-  </select>
- </div>
+    <div class="col-6">
+        <h3>Stories</h3>
+        <div class="form-group row">
+
+        <label for="searchstory">Search stories</label>
+        <div class="col-3">
+            
+        <input type="text" id="searchstory">
+        <div>
+        <label for="type">Select type</label>
+        <select id="type">
+            <option value="">-All-</option>
+            <option value="video">Video</option>
+            <option value="audio">Audio</option>
+            <option value="written">Text</option>
+        </select>
+        </div>
 </div>
+        </div>
+    </div>
+
+
 <table class="table table-stripped">
  <thead>
 	<tr>
@@ -107,8 +105,18 @@ function myFunction() {
   </div>
 </div>
 
-
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 <?php include ("footer.html")?>
+
 
 </body>
 </html>

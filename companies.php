@@ -42,24 +42,13 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='' ?>
     <section>
             <div class="header">
                 <div class="pic-header" id="stories-header">
-                    <h1>Companies</h1>
+                    <h1>COMPANIES<br>ACTIVITIES</h1>
                 </div>
             </div>
-    
-     
     </section>
     
-    <script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
 
+<section>
 <div class="row">
   <div class="col-sm-4">
 	<h5>Companies</h5>
@@ -109,8 +98,17 @@ function myFunction() {
    <div id="activities"></div>
   </div>
 </div>
-
+</section>
 <?php include ("footer.html")?>
-
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 </body>
 </html>

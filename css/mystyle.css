@@ -254,6 +254,15 @@ ul.topnav li.right {float: right;}
   line-height: 1.6 !important;
   width: 90%;
 }
+.description a {
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: normal;
+  color: #000; 
+  line-height: 1.6 !important;
+  width: 90%;
+  text-decoration: none;
+}
 .idea{
     padding-bottom: 5em;
 }
@@ -469,13 +478,13 @@ nav ul {
   font-size: 42px;
   color: #000;
   font-weight: 700;
+  margin-bottom: -14px;
 }
 
 .heading-2 {
   font-family: 'Lato', sans-serif;
   font-size: 32px;
-  margin-bottom: em;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 
 .places {
@@ -540,6 +549,7 @@ nav ul {
 }
 #squirrel-img {
   height: 60%;
+  border-radius: 5px;
 }
 .cta-full-width {
   height: 250px;
@@ -637,4 +647,7 @@ nav ul {
     display: block;
   }
 
+}
+.boxes {
+  margin-bottom: 1em;
 }

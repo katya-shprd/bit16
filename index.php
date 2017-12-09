@@ -85,15 +85,19 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     </section>
     <section>
             <div class="col-6 opt-bot-marg">
-            <span id="route-dec" class="opt-bot-marg">Most popular places to begin</span>
+            <span id="route-dec" class="opt-bot-marg">Most popular places to begin with</span>
             </div>
+            <div class="col-6">
+            <p class="description">Looking for a hotel or activity to start discovering Lapland? Check this out </p>
+            </div>
+            
        
        
         <div class="col-6">
         <span class="heading-2">Hotels</span><br>
         </div>
         <div class="col-6">
-        <a href='https://www.booking.com/'>Click to open booking.com</a>
+        <p class="description"><a href='https://www.booking.com/'>Open booking.com</a></p>
         </div>
     <div class="col-6">
      <div class="container-places">
@@ -102,10 +106,10 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
                <img class="full-img" src="images/mustaparta.jpg">
             </div>
             <span class="name-places">Hotel Mustaparta - Finland</span>
-            <div class="hor-labels">
-            <span><span class="label">city</span> <br> Tornio, 95400</span>
-            <span><span class="label">address</span> <br> Keskikatu 24</span>
-            </div>
+            
+             <span><b>city: </b>Tornio, 95400</span>
+            <span class="boxes"><b>address: </b>Keskikatu 24 <br></span>
+            
             <div id="TA_socialButtonBubbles469" class="TA_socialButtonBubbles">
                 <ul id="k3uQze" class="TA_links PmizNlBWNnhI">
                 <li id="ZoXPLWOYYf" class="o5XprqdTtWji">
@@ -122,10 +126,10 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
                <img class="full-img" src="images/pello.png">
             </div>
             <span class="name-places">Lempeän Suvanto - Finland</span>
-            <div class="hor-labels">
-            <span><span class="label">city</span> <br> Pello, 95700</span>
-            <span><span class="label">address</span> <br> Väylänvarrentie 27A</span>
-            </div>
+            
+            <span><b>city: </b>Pello, 95700</span>
+            <span class="boxes"><b>address: </b>Väylänvarrentie 27A <br></span>
+            
             <div id="TA_socialButtonBubbles993" class="TA_socialButtonBubbles">
             <ul id="mJ9Uhktex" class="TA_links muviuxj7rOj">
             <li id="OIu5z9l8wv" class="mNf08eOYGYe">
@@ -143,10 +147,10 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
                <img class="full-img" src="images/river.jpg">
             </div>
             <span class="name-places">Lapland Guest House - Sweden</span>
-            <div class="hor-labels">
-            <span><span class="label">city</span> <br> Pajala 984 32</span>
-            <span><span class="label">address</span> <br>2 Soukolovaegen</span>
-            </div>
+            
+            <span><b>city: </b>Pajala, 98432 </span>
+            <span class="boxes"><b>address: </b>Soukolovaegen 2 <br></span>
+            
             <div id="TA_socialButtonBubbles920" class="TA_socialButtonBubbles">
             <ul id="XYWwsw1" class="TA_links tO7NYsv35L8">
             <li id="wSZtmDHHgL" class="K0CBAss">
@@ -159,26 +163,6 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 
         </div>
 
-        <div class="col-15">
-                <div class="cards-places">
-               <img class="full-img" src="images/enter_city_hotel.jpg">
-            </div>
-            <span class="name-places">Enter City Hotel - Norway</span>
-            <div class="hor-labels">
-            <span><span class="label">city</span> <br> Tromsö, 9008</span>
-            <span><span class="label">address</span> <br> Grønnegata 48</span>
-            </div>
-            <div id="TA_socialButtonBubbles247" class="TA_socialButtonBubbles">
-            <ul id="59PGloJ" class="TA_links IgSmAqZah">
-            <li id="Ee7eKw7i" class="S7yRvhC">
-            <a target="_blank" href="https://www.tripadvisor.com/Hotel_Review-g190475-d1230601-Reviews-Enter_City_Hotel-Tromso_Troms_Northern_Norway.html"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/socialWidget/20x28_green-21693-2.png"/></a>
-            </li>
-            </ul>
-            </div>
-            <script src="https://www.jscache.com/wejs?wtype=socialButtonBubbles&amp;uniq=247&amp;locationId=1230601&amp;color=green&amp;size=rect&amp;lang=en_US&amp;display_version=2"></script>
-            
-
-        </div>
         
     </div>      
     
@@ -189,7 +173,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 <span class="heading-2">Activities</span>
 </div>
     <div class="col-6">
-        <a href='companies.php'>Click to see more <br> </a>
+    <p class="description"><a href='companies.php'>Open to see more <br> </a> </p>
     </div>
 
 <div class="col-6">
@@ -199,10 +183,10 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
        <img class="full-img" src="images/farm_escape.jpg">
     </div>
     <span class="name-places">Farm Escape</span>
-    <div class="hor-labels">
-    <span><span class="label">city</span> <br> Tornio, 95540</span>
-    <span><span class="label">address</span> <br>Mustajärventie 456</span> 
-    </div>
+
+    <span><b>city: </b>Tornio, 95540 </span>
+    <span class="boxes"><b>address: </b>Mustajärventie 456 <br></span>
+            
 </div>
 
 <div class="col-15">
@@ -210,10 +194,10 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
        <img class="full-img" src="images/skiing.jpg">
     </div>
     <span class="name-places">Skiing in Kemi - Finland</span>
-    <div class="hor-labels">
-    <span><span class="label">city</span> <br> Kemi, 95100</span>
-    <span><span class="label">address</span> <br> Kauppakatu 5</span>
-    </div>
+
+    <span><b>city: </b>Kemi, 95100 </span>
+    <span class="boxes"><b>address: </b>Kauppakatu 5 <br></span>
+         
 </div>
 
 <div class="col-15">
@@ -221,22 +205,12 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 <img class="full-img" src="images/camping.jpg">
 </div>
 <span class="name-places">Camping tour - Norway</span>
-<div class="hor-labels">
-<span><span class="label">city</span> <br> Tromsö, 9008</span>
-<span><span class="label">address</span> <br> Gronnegata 45</span>
-</div>
-</div>
 
-<div class="col-15">
-<div class="cards-places">
-<img class="full-img" src="images/snowmobile.jpg">
+<span><b>city: </b>Tromsö, 9008 </span>
+<span class="boxes"><b>address: </b>Gronnegata 45 <br></span>
+
 </div>
-<span class="name-places">Snowmobile - Sweden</span>
-<div class="hor-labels">
-<span><span class="label">city</span> <br> Haparanda, 953 32 </span>
-<span><span class="label">address</span> <br> Storgatan 63</span>
-</div>
-</div>      
+   
 </section>
 
 
