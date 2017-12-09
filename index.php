@@ -14,9 +14,6 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <meta name="viewport" content="width=device-width, initial-scale=1">
   	<meta name="keywords" content="footer, address, phone, icons" />
     <link href="css/mystyle.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/hall.css">
-    <link rel="stylesheet" href="css/form.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/login.js"></script>
 

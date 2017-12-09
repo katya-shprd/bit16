@@ -4,7 +4,7 @@ if ($action=="")    /* display the contact form */
     {
     ?>
     <style>
-    <?php include("css/form.css") ?>
+    <?php include("css/mystyle.css") ?>
     </style>
     <link href="css/mystyle.css" rel="stylesheet">
     <form class="formy" action="" method="POST" enctype="multipart/form-data">

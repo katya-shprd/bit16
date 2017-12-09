@@ -15,8 +15,6 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <meta name="viewport" content="width=device-width, initial-scale=1">
   	<meta name="keywords" content="footer, address, phone, icons" />
 	<link href="css/mystyle.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/hall.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/login.js"></script>
 
@@ -28,7 +26,6 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 
 		<!-- Bootstrap core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/mapstyle.css" rel="stylesheet">
 		<script src="js/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJyMRA0og8zyH1WiqCVTOjC6CBVfDrEak"></script>
 		<script src="js/jquery.googlemap.js"></script>
@@ -67,7 +64,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 					<option value='PELLO'>Pello</option>
 					<option value='Tromsø'>Tromsø</option>
 				</select>
-				<input type="submit" value="Show" />
+				<input type="submit" id="map-button" value="Show" />
 			</form>
         </div>
 

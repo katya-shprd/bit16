@@ -20,9 +20,6 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='' ?>
   <link rel="stylesheet" href="assets/puritym/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
  
-  <link rel="stylesheet" href="css/footer.css">
-      <link rel="stylesheet" href="css/hall.css">
-      <link rel="stylesheet" href="css/stories.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/login.js"></script>
     <script src="js/myscript.js"></script>

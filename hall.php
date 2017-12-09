@@ -14,8 +14,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   	<meta name="keywords" content="footer, address, phone, icons" />
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-      <link rel="stylesheet" href="css/footer.css">
-      <link rel="stylesheet" href="css/hall.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="js/login.js"></script>
 
