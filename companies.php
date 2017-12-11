@@ -96,6 +96,9 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='' ?>
   </div>
 </div>
 </section>
+
+
+
 <?php include ("footer.html")?>
 <script>
 function myFunction() {

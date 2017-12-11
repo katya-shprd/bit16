@@ -7,12 +7,13 @@ if ($action=="")    /* display the contact form */
     <?php include("css/mystyle.css") ?>
     </style>
     <link href="css/mystyle.css" rel="stylesheet">
-    <form class="formy" action="" method="POST" enctype="multipart/form-data">
+    <form class="stories-form" action="" method="POST" enctype="multipart/form-data">
     <input type="hidden" name="action" value="submit">
-    <input name="name" type="text" value="" size="30" placeholder="Name"/><br>
+    <input name="name" type="text" value="" size="30" placeholder="Author's name"/><br>
+    <input name="Country-city" type="text" value="" size="30" placeholder="Country and city"/><br>
     <input name="email" type="text" value="" size="30" placeholder="Email"/><br>
-    <textarea name="message" rows="7" cols="30" placeholder="Message"></textarea><br>
-    <input type="submit" value="Send email"/>
+    <textarea name="story-text" rows="7" cols="30" placeholder="Write here your story or leave YouTube link"></textarea><br>
+    <input type="submit" value="Send story"/>
     </form>
     <?php
     } 

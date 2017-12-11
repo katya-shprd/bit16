@@ -101,6 +101,15 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
   </div>
 </div>
 
+<div class="col-6">
+<span class="heading-2">Share your own story</span>
+</div>
+<br>
+<div class="col-6 centered">
+<?php include ("stories-form.php")?>
+</div>
+
+
 <script>
 function myFunction() {
     var x = document.getElementById("myTopnav");
