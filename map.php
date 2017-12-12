@@ -49,7 +49,58 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 
 			<?php include ("nav.html") ?>
 
-			<script>
+<section>
+            <div class="header">
+                <div class="pic-header" id="map-header">
+                    <h1>MAP</h1>
+                </div>
+            </div>
+    
+     
+    </section>
+
+	<div class="col-6 centered">
+			<span class="heading-1">Please, select area</span>
+	</div>
+			
+			<form id="search">
+				<select id="area">
+				
+						<option value=''>-Select-</option>
+						<option value='Tornio'>Tornio</option>
+						<option value='Haparanda'>Haparanda</option>
+						<option value='Ylitornio'>Ylitornio</option>
+						<option value='Övertorneå'>Övertorneå</option>
+						<option value='Pello'>Pello</option>
+						<option value='Kolari'>Kolari</option>
+						<option value='Pajala'>Pajala</option>
+						<option value='Kiruna'>Kiruna</option>
+						<option value='Muonio'>Muonio</option>
+						<option value='Enontekiö'>Enontekiö</option>
+						<option value='Storfjord'>Storfjord</option>
+						<option value='Kautokeino'>Kautokeino</option>
+						<option value='Kåfjord'>Kåfjord</option>
+						<option value='Nordreisa'>Nordreisa</option>
+						<option value='Tromsø'>Tromsø</option>
+
+				</select>
+				<input type="submit" id="map-button" value="Show" />
+			</form>
+        </div>
+
+        <div class="embedContainer">
+            <div class="googleMap">
+				<div id="map"></div>
+			</div>
+        </div>
+
+
+
+	  </div>
+
+	  <?php include ("footer.html")?>
+	  
+	  <script>
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -60,43 +111,5 @@ function myFunction() {
 }
 </script>
 
-	 <div class="pageContainer">
-        <div class="addressContainer">
-            <h1>OurStories</h1>
-			<h2>Select area</h3>
-			<form id="search">
-				<select id="area">
-					<option value=''>-Select-</option>
-					<option value='Tornio'>Tornio</option>
-					<option value='Haparanda'>Haparanda</option>
-					<option value='Ylitornio'>Ylitornio</option>
-					<option value='Övertorneå'>Övertorneå</option>
-          <option value='Pello'>Pello</option>
-          <option value='Kolari'>Kolari</option>
-          <option value='Pajala'>Pajala</option>
-          <option value='Kiruna'>Kiruna</option>
-          <option value='Muonio'>Muonio</option>
-          <option value='Enontekiö'>Enontekiö</option>
-          <option value='Storfjord'>Storfjord</option>
-          <option value='Kautokeino'>Kautokeino</option>
-          <option value='Kåfjord'>Kåfjord</option>
-          <option value='Nordreisa'>Nordreisa</option>
-          <option value='Tromsø'>Tromsø</option>
-				</select>
-				<input type="submit" value="Show" />
-			</form>
-        </div>
-
-        <div class="embedContainer">
-            <div class="googleMap">
-				<h2>Map</h2>
-				<div id="map"></div>
-			</div>
-        </div>
-
-
-
-	  </div>
-	  <?php include ("footer.html")?>
 	</body>
 </html>
