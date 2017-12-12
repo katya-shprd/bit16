@@ -36,16 +36,27 @@
             <div class="pic-header" id="hall-header">
                 <h1>Hall of fame</h1>
             </div>
-
- 
     </section>
-
-    
-<!-- cards --> 
 <section>
+    <div class="col-6 centered">
+			<span class="description-2">Hall of Fame describes top-30 travelers of Northern Lights Route. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu tellus, cursus ac mauris et, scelerisque blandit mauris. Suspendisse sed consequat odio.</span>
+    </div>
+    <div class="col-6 centered">
+        <span class="first-place">1</span>
+    </div>
+
+    <div class="col-6 centered">
+        <p id="second">2 <span class="third">3</span></p>
+    </div>
+</section>    
+<!-- cards --> 
+
+
+<section>
+    
         <div class="container">
             <div class="row">
-
+               
                 <div class="card silver">
                    
                     <h3>Smoked Salmon</h3>
@@ -71,7 +82,7 @@
 
                 <div class="card bronze">
                     
-                    <h3>Verysuperlong Someone's Name</h3>
+                    <h3>Red Fox</h3>
                     <div class="circle" id="circle-pic2"></div>
                    
                     <div class="button"><button>View profile</button></div>
@@ -115,7 +126,11 @@
 
 </section>
 
-<?php include ("footer.html")?>
+<div class="col-6 centered">
+    <input type="submit" value="View more"/>
+</div>
+
+
         
                 <script>
 function myFunction() {
@@ -127,7 +142,7 @@ function myFunction() {
     }
 }
 </script>
-
+<?php include ("footer.html")?>
 </body>
 
 </html>

@@ -215,7 +215,6 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
    <section>
     <div class="col-6 cta-full-width">
       <center><span id="route-dec">Take part in Northern Lights Route!</span></center>
-     <br><img class="full-img" src="images/route-img.png">
       <center><a href="map.php"><input type="submit" value="See the map"/></a></center> 
     </div>
     </section>

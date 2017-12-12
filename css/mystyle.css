@@ -48,7 +48,7 @@ ul.topnav li {
   }
 ul.topnav li a {
         display: block;
-        color: white;
+        color: white !important;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -126,8 +126,11 @@ h1 {
   margin-bottom: -16em;
 }
 #hall-header {
-  background: url('../images/hall.jpg');
+  background: url('../images/hall.jpeg');
   background-position: 50% 50%;
+  background-size: cover;
+  align-items: center;
+  margin-bottom: -16em;
 }
 .pic-header {
   display: flex;
@@ -257,14 +260,17 @@ img {
 .gold {
   background: #F6E16F; 
   padding-left: 30px;
+  padding-right: 30px;
 }
 .silver {
   background: #EAEAEA;
   padding-left: 30px;
+  padding-right: 30px;
 }
 .bronze {
   background: #F7AC62;
   padding-left: 30px;
+  padding-right: 30px;
 }
 #gold {
   margin: -50px;
@@ -321,7 +327,7 @@ img {
   opacity: 0.5;
 }
 #CA{
-  margin-top: -15px;
+  margin-top: 5px;
 }
 .activities{
   margin-left: 2em;
@@ -347,16 +353,38 @@ img {
   color: #b3b3b3;
   letter-spacing: 20%;
 }
+.first-place {
+  font-size: 36px;
+  color: black;
+  margin-top: 4em;
+}
+#second {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-size: 32px;
+  color: black;
+  letter-spacing: 20%;
+  margin-top: 17px;
+
+}
+.third {
+  padding-left: 20em;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-size: 32px;
+  color: black;
+  letter-spacing: 20%;
+}
 #number {
   font-family: 'Oswald';
   font-style: normal;
   font-size: 24px;
   color: #2D9CDB;
   letter-spacing: 20%;
-  padding-right: 0.5em;
+  margin-top: -5px;
 }
 .num {
-  margin-left: 4.5em;
+  margin-left: 3em;
   font-family: 'Oswald';
   font-style: normal;
   font-size: 24px;
@@ -369,7 +397,7 @@ img {
   font-size: 48px;
   color: #2D9CDB;
   letter-spacing: 20%;
-  padding-right:0.5em;
+  margin-top: 17px;
 
 }
 .num1 {
@@ -414,6 +442,17 @@ img {
   width: 90%;
   text-decoration: none;
 }
+.description-2{
+  width: 70%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  line-height: 1.6 !important;
+  text-shadow: 5px 5px 17px rgba(0, 0, 0, 0.67);
+  text-align: center;
+}
+  
 .idea{
     padding-bottom: 5em;
 }
@@ -533,13 +572,14 @@ nav ul {
     padding: 6px 5px;
     margin: 0 0 5px 0;
     width: 238px;
-    border: 1px solid #ccc;
+    border: none;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
     -moz-box-shadow: 0 1px 1px #ccc inset;
     -webkit-box-shadow: 0 1px 1px #ccc inset;
     box-shadow: 0 1px 1px #ccc inset;
+    margin-right: -2em !important;
   }
   #inputs input:focus {
     background-color: #fff;
@@ -554,31 +594,12 @@ nav ul {
   
   #login #actions {
     margin: 10px 0 0 0;
+    width: 300px;
+    float: right;
+    border: none;
+    margin-top: -1em !important;
   }
-  #login #submit {		
-    background-color: #d14545;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#e97171), to(#d14545));
-    background-image: -webkit-linear-gradient(top, #e97171, #d14545);
-    background-image: -moz-linear-gradient(top, #e97171, #d14545);
-    background-image: -ms-linear-gradient(top, #e97171, #d14545);
-    background-image: -o-linear-gradient(top, #e97171, #d14545);
-    background-image: linear-gradient(top, #e97171, #d14545);
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    text-shadow: 0 1px 0 rgba(0,0,0,.5);
-    -moz-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
-    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;    
-    border: 1px solid #7e1515;
-    float: left;
-    height: 30px;
-    padding: 0;
-    width: 100px;
-    cursor: pointer;
-    font: bold 14px Arial, Helvetica;
-    color: #fff;
-  }
+  
   #login #submit:hover,
   #login #submit:focus {		
     background-color: #e97171;
@@ -600,15 +621,18 @@ nav ul {
   }
   #login label {
     float: right;
-    line-height: 30px;
+    line-height: 1px;
     color: white;
-    font-size: 0.9em
+    font-size: 0.9em;
+    margin-top: 1em;
+
   }
   #login label input {
     position: relative;
     right: 2px;
+    border: none;
   }
-
+  
   /* Content design */
   .container-places span:not(.name-places) {
     margin-bottom: 0.5rem;
@@ -627,6 +651,7 @@ nav ul {
   font-size: 32px;
   margin-top: 2em;
   color: #000000;
+  z-index: 10;
 }
 .heading-2 {
   font-family: 'Montserrat', sans-serif;
@@ -668,6 +693,7 @@ nav ul {
   border: none;
   margin-top: 2em;
 }
+
 .name-places {
   font-family: 'Montserrat', sans-serif;
   margin: 10px 0px 10px 0px;
@@ -694,8 +720,8 @@ nav ul {
 button {
   color: rgba(54, 54, 199);
   font-size: 20px; 
-  margin-bottom: 68px;
-  margin-top: 1px;
+  margin-bottom: 30px;
+  margin-top: 15px;
   border: none;
   color: darkblue; 
   background: none; 
@@ -757,6 +783,11 @@ input[type="submit"] {
   -moz-box-shadow: 4px 4px 52px -12px rgba(0,0,0,0.29);
   box-shadow: 4px 4px 52px -12px rgba(0,0,0,0.29);
 }
+#sign {
+  font-size: 16px;
+  padding: 10px;
+  width: 150px !important;
+}
 #map-button {
   padding: 0px;
   width: 20% !important;
@@ -780,12 +811,7 @@ input[type="submit"] {
   min-width: 150px;
 
 }
-*{
-  margin: 0;
-  padding: 0;
-  font-family: Tahoma, Verdana, Segoe, sans-serif;
-  color: #333;
-}
+
 .pageContainer {
 max-width: 900px;
   padding: 20px;
@@ -949,7 +975,8 @@ input[type="submit"]:hover {
 	margin-bottom: 20px;
 }
 .footer-distributed .footer-icons{
-	margin-top: 25px;
+  margin-top: 25px;
+  
 }
 .footer-distributed .footer-icons a{
 	display: inline-block;
@@ -966,10 +993,11 @@ input[type="submit"]:hover {
 	margin-bottom: 5px;
 }
 .footer-distributed .footer-center i{
-		margin-left: 0;
+    margin-left: 0;
+    
 }
 .footer-icons {
-	padding: 5px;
+  
 }
 
 /* Only Media */
