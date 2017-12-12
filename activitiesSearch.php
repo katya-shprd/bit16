@@ -11,7 +11,7 @@ $sql="SELECT DISTINCT * FROM activity
 	ON activity.activityID=area_activity.activityID
 	JOIN community
 	ON area_activity.communityID=community.communityID
-	WHERE community.communityName LIKE '$search' OR activity.activityKeyword LIKE '$search'";
+	WHERE community.communityName LIKE '$search' OR activity.activityKeyword LIKE '%%$search%%'";
 $result = $conn->query($sql);
 $output=array();
 while($row=$result->fetch_assoc()){
