@@ -18,10 +18,8 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='' ?>
     <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/puritym/css/style.css">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
  
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/login.js"></script>
     <script src="js/myscript.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -36,79 +34,58 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='' ?>
 
 <?php include ("nav.html") ?> 
 
-    <section>
-            <div class="header">
-                <div class="pic-header" id="stories-header">
-                    <h1>COMPANIES<br>ACTIVITIES</h1>
-                </div>
-            </div>
-    </section>
-    
-
 <section>
-<div class="row">
-  <div class="col-sm-4">
-	<h5>Companies</h5>
-	
-	<p>
-	Some examples of displaying results from database in html-page. PHP-scripts result JSON-data that is available for any
-	user interface - like this HTML-page with jQuery. When the page is loaded, there will be the default listing of results
-	on the right side here.
-	</p>
-	
-	<p>
-	Same listing in a <button id="cmpTable" type="button" class="btn btn-default">table format</button>.
-	</p>
-	<p>
-	Search companies by communityname to see which companies operate
-	on that area.
-		<input type="text" id="search" />
-	</p>
-  </div>
-  <div class="col-sm-8">
-   <h5>Results from database</h5>
-   <div id="results"></div>
-  </div>
+<div class="header">
+    <div class="pic-header" id="stories-header">
+        <h1>COMPANIES<br>ACTIVITIES</h1>
+    </div>
 </div>
+</section>
+<section>
+<div >
+<button id="comp">Companies</button>
+<button id="act">Activities</button>
 
-<div class="row">
-  <div class="col-sm-4">
-	<h5>Activities</h5>
-	
-	<p>
-	Some examples of displaying results from database in html-page. PHP-scripts result JSON-data that is available for any
-	user interface - like this HTML-page with jQuery. When the page is loaded, there will be the default listing of results
-	on the right side here.
-	</p>
-	
-	<p>
-	Same listing in a <button id="actTable" type="button" class="btn btn-default">table format</button>.
-	</p>
-	<p>
-	Search companies by communityname to see which companies operate
-	on that area.
-		<input type="text" id="actsearch" />
-	</p>
-  </div>
-  <div class="col-sm-8">
-   <h5>Results from database</h5>
-   <div id="activities"></div>
-  </div>
+<section id="complist" class="content">
+<h5>Companies</h5>
+<p>
+Find company by community name.
+<div class="col-3">
+<input type="text" id="compSearch" />
+</div>
+</p>
+<table class="table table-condensed">
+<thead>
+<tr>
+<th>#</th><th>Company</th><th>Address</th><th>About</th><th>Website</th><th>Facebook</th>
+</tr>
+</thead>
+<tbody id="compResults">
+</tbody>
+</table></section>
+</div>
+<div >
+<section id="actlist" class="content">    
+<h5>Activities</h5>
+<p>
+Find activity by keyword.
+<div class="col-3">
+    <input type="text" id="actSearch" />
+</div>
+</p>
+<table class="table table-condensed">
+<thead>
+<tr>
+<th>#</th><th>Activity</th><th>Keyword</th><th>Description</th>
+</tr>
+</thead>
+<tbody id="actResults">
+</tbody>
+</table>
+</section>
 </div>
 </section>
 
-
-
 <?php include ("footer.html")?>
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
 </body>
 </html>
