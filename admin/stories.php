@@ -59,7 +59,7 @@ while($row=$result->fetch_assoc()){
 	echo '<td>'.$row['storyLink'].'</td>';
     echo '<td>'.$row['storyKeywords'].'</td>';
 	echo '<td>'.$row['storyDescription'].'</td>';
-	echo '<td><a href="index.php?page=editstory&storyID='.$row['storyID'].'">Edit</a></td>';
+	echo '<td><a href="index.php?page=editStory&storyID='.$row['storyID'].'">Edit</a></td>';
 	echo '</tr>';
 }
 echo '</table>';

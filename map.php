@@ -99,24 +99,23 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 
 <script>
 $(document).ready(function(){
-$("#searchStoryarea").keyup(function(){
+$("#search").keyup(function(){
 searchStoryareas();
 });
 });
 function searchStoryareas(){
-var searchword=$("#searchStoryarea").val();
+var searchword=$("#search").val();
 $.getJSON("storyareaSearch.php?search="+searchword,function(data){
 var resultlist='<table id="results"><tr><th>ID</th><th>Title</th><th>Type</th><th>Link</th><th>Keywords</th><th>Desc</th><th>Community</th></tr>';
 $.each( data, function( key, story) {
-resultlist=resultlist+
-'<tr><td>'+story.storyID+'</td><td>'+story.storyTitle+'</td><td>'+story.storyType+'</td><td><a href="'+story.website+'" target="_blank">Link</a></td><td>'+story.storyKeywords+'</td><td>'+story.storyDescription+'</td><td>'+community.communityName+'</td></tr>';
+resultlist=resultlist+'<tr><td>'+story.storyID+'</td><td>'+story.storyTitle+'</td><td>'+story.storyType+'</td><td><a href="'+story.website+'" target="_blank">Link</a></td><td>'+story.storyKeywords+'</td><td>'+story.storyDescription+'</td><td>'+community.communityName+'</td></tr>';
 });
-$("#resultsStoryarea").html(resultlist+'</table>');
+$("#results").html(resultlist+'</table>');
 });
 }
 </script>
 
-<div id="resultsStoryarea"></div>
+<div id="results"></div>
 
 
 	  </div>

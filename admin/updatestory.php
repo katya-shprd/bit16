@@ -21,7 +21,7 @@ if(!$error){
 	$_SESSION['msg']='<h5 class="alert alert-success">Updated!</h5>';
 }else $_SESSION['msg']='<h5 class="alert alert-danger">Could not update!</h5>';
 $conn->close();
-header("location:index.php?page=editstory&storyID=$storyID");
+header("location:index.php?page=stories");
 
 /* storyID
 storyTitle

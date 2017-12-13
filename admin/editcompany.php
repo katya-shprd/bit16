@@ -14,7 +14,7 @@ if($result->num_rows>0){
 		echo $_SESSION['msg'];
 		$_SESSION['msg']='';
 	}
-	echo '<form action="updatecompany.php" method="post">
+	echo '<h4>Edit Company</h4><div class="row"><div class="col-sm-6 well"><form action="updatecompany.php" method="post">
 			<input type="hidden" name="companyID" value="'.$companyID.'" />
 			Company name <input type="text" name="companyName" value="'.$row['companyName'].'" /><br />
 			Street <input type="text" name="street" value="'.$row['street'].'" /><br />
@@ -32,3 +32,49 @@ if($result->num_rows>0){
     echo '</form></p>';	
 }else echo '<h4>No record found</h4>';
 ?>
+	<h5>Edit company information</h5>
+  </div>
+  <div class="col-sm-6 well">
+	<h5>Connect company to different communities in the area</h5>
+	<form action="linkCompanyToArea.php" method="post">
+	 <input type="hidden" name="companyID" value="<?php echo $companyID?>" />
+	 <div class="form-group">
+		<label for="area">Connect this company to community:</label>
+		<select class="form-control" id="area" name="area">
+				<option value="">-Select community-</option>
+				<?php
+				 $sql="SELECT * FROM community 
+						WHERE communityID NOT 
+						IN(SELECT communityID FROM companyarea WHERE companyID=$companyID)
+						ORDER BY country,communityName";
+				 $result=$conn->query($sql);
+				 while($row=$result->fetch_assoc()){
+					 echo '<option value="'.$row['communityID'].'">'.$row['communityName'].' '.$row['country'].'</option>';
+				 }
+				?>
+		</select>
+	 </div>
+	 <button type="submit" class="btn btn-default">Link to area</button>
+	</form>
+	<p></p>
+	<div class="well">
+	<h5>Communities linked to this company</h5>
+	<ul class="list-group">
+	<?php
+	$sql="SELECT * FROM community
+			INNER JOIN companyarea
+			ON community.communityID=companyarea.communityID
+			WHERE companyarea.companyID=$companyID";
+	$result=$conn->query($sql);
+	while($row=$result->fetch_assoc()){
+		echo '<li class="list-group-item">';
+		echo '<a href="unLinkCompanyFromArea.php?communityID='.$row['communityID'].'&companyID='.$companyID.'"><span class="glyphicon glyphicon-remove"></span></a> ';
+		echo $row['communityName'].', '.$row['country'];
+		echo '</li>';
+	}
+	$conn->close();
+	?>
+	</ul>
+	</div>
+  </div>
+</div>

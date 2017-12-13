@@ -1,77 +1,56 @@
 <?php
 /*
-	file:	admin/users.php
-	desc:	Displays the list of users in user-table
-			Link to a form for adding a new user
-			Edit and Delete -links
+		file: 	ourstories_example/admin/users.php
+		desc:	Displays the list of users in db
 */
-if(!empty($_GET['mode'])) $mode=$_GET['mode'];else $mode='';
-//variables used in pager: $start and $nr_of_records defined here
 if(!empty($_GET['start'])) $start=$_GET['start'];else $start=0;
-$nr_of_records=5;  //display 5 records at list on every page
-//checkin, if on the firs page, start is always zero - even in previous
+$nr_of_records=3;
 if($start==0) $prev=$start;else $prev=$start-$nr_of_records;
-include('../db.php'); //use the database connection from parent folder
-//check the number of records from database table person
+include('../db.php');
 $sql="SELECT count(*) as NrOfRecords FROM user";
 $result=$conn->query($sql);
 $row=$result->fetch_assoc();
 $TotalRecords=$row['NrOfRecords'];
+$sql="SELECT level FROM user WHERE userID=".$_SESSION['userID'];
+$result=$conn->query($sql);
+if($result->num_rows>0){
+	$row=$result->fetch_assoc();
+	if($row['level']=='admin') $admin=true;else $admin=false;
+}
 ?>
 <h4>Users</h4>
-<a href="index.php?page=users&mode=add">Add new user</a>
-<p>* - required fields</p>
-
-<?php
-echo '<table class="table table-striped"><tr><th>ID#</th><th>Email *</th><th>Password *</th>';
-echo '<th>Firstname *</th><th>Lastname *</th><th>Phone *</th><th>Level *</th><th></th></tr>';
-//if mode in url is add, display a form as first line in table
-if($mode=='add'){
-	echo '<form action="insertuser.php" method="post">
-		  <tr>
-			<td></td>
-			<td><input type="email" name="email" /></td>
-			<td><input type="text" name="password" /></td>
-			<td><input type="text" name="firstname" /></td>
-			<td><input type="text" name="lastname" /></td>
-			<td><input type="text" name="phone" /></td>
-			<td><select name="level">
-					<option value="">-Select-</option>
-					<option value="superadmin">superadmin</option>
-					<option value="admin">admin</option>
-					<option value="editor">editor</option>
-					</select>
-			</td>
-			<td><input type="submit" value="Add" /></td>
-		  </tr>
-		  </form>';
-}
-
-$sql = "SELECT *
-		FROM user 
-		ORDER BY lastname,firstname
-		LIMIT $start,$nr_of_records";
-		
-$result=$conn->query($sql);  //runs the query in database
-while($row=$result->fetch_assoc()){
-	echo '<tr>';
-	echo '<td>'.$row['userID'].'</td>';
-	echo '<td>'.$row['email'].'</td>';
-	echo '<td>'.$row['password'].'</td>';
-	echo '<td>'.$row['firstname'].'</td>';
-	echo '<td>'.$row['lastname'].'</td>';
-	echo '<td>'.$row['phone'].'</td>';
-	echo '<td>'.$row['level'].'</td>';
-	echo '<td><a href="index.php?page=edituser&userID='.$row['userID'].'">Edit</a></td>';
-	echo '</tr>';
-}
-echo '</table>';
-$conn->close(); //close the connection - removed from server memory
-
-?>
+<p>Here are the users. Every user can edit their own data. Admins can edit everyones data.</p>
+<p><a href="index.php?page=userFrm">Add user <span class="glyphicon glyphicon-plus"></span></a></p>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>UserID</th><th>Email</th><th>Firstname</th><th>Lastname</th><th>Phone</th><th>Level</th><th>Image</th><th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<?php
+			$sql="SELECT * FROM user ORDER BY lastname, firstname LIMIT $start,$nr_of_records";
+			$result=$conn->query($sql);
+			while($row=$result->fetch_assoc()){
+				echo '<tr>';
+				echo '<td>'.$row['userID'].'</td>';
+				echo '<td>'.$row['email'].'</td>';
+				echo '<td>'.$row['firstname'].'</td>';
+				echo '<td>'.$row['lastname'].'</td>';
+				echo '<td>'.$row['phone'].'</td>';
+				echo '<td>'.$row['level'].'</td>';
+				echo '<td><img src="./images/'.$row['image'].'"  class="media-object" style="width:50px" /></td>';
+				if($admin OR(!$admin AND $_SESSION['userID']==$row['userID'] )){
+					echo '<td><a href="index.php?page=editUser&userID='.$row['userID'].'"><span class="glyphicon glyphicon-pencil"></span></a></td>';
+				}				
+				echo '</tr>';
+			}
+			$conn->close();
+		?>
+	</tbody>
+</table>
 <ul class="pager">
 <?php
-	//check if in the first page
 	if($start==0){
 		echo '<li>Previous </li>';
 	}else{
@@ -79,7 +58,6 @@ $conn->close(); //close the connection - removed from server memory
   <li><a href="index.php?page=users&start=<?php echo $prev?>">Previous</a></li>
 <?php
 	}
-	//check if already in the last page
 	$lastrecordnow=$start+$nr_of_records;
 	if($lastrecordnow<$TotalRecords){
 ?>
