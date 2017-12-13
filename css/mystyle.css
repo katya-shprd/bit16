@@ -1077,6 +1077,18 @@ input[type="submit"]:hover {
     .description-2 {
       margin-top: -10px;
     }
+    input[type="submit"]#comp{
+      width: 50% !important;
+    }
+    input[type="submit"]#act{
+      width: 50% !important;
+      margin-top: 0;
+      margin-left: -19px;
+      
+    }
+    #desc-resp {
+      margin-top: 1em !important;
+    }
 }
 @media (max-width: 1050px) {
       section:not(:first-of-type) {

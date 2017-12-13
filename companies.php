@@ -37,7 +37,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='' ?>
 <div class="header">
     <div class="pic-header col" id="companies-header">
         <h1 class="centered">FIND ACTIVITIES</h1>
-        <div class="col-6 centered"><p class="description-2">Browse companies and activities they offer. Just type city or company in the field bellow and you will see the list of avalible activities near by </p></div>
+        <div class="col-6 centered"><p class="description-2" id="desc-resp">Browse companies and activities they offer. Just type city or company in the field bellow and you will see the list of avalible activities near by </p></div>
     </div>
 </div>
 </section>

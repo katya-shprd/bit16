@@ -39,7 +39,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 <div class="header">
     <div class="pic-header col" id="stories-header">
         <h1 class="centered">OUR STORIES</h1>
-        <div class="col-6 centered"><p class="description-2">View, listen or read stories from Northern Lights Route. Type name of the story and choose the type or just scroll down and see the list of all avalible stories </p></div>
+        <div class="col-6 centered"><p class="description-2" id="desc-resp">View, listen or read stories from Northern Lights Route. Type name of the story and choose the type or just scroll down and see the list of all avalible stories </p></div>
     </div>
 </div>
 </section>
