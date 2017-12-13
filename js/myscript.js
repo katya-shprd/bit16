@@ -32,7 +32,7 @@ $(document).ready(function(){
 		searchActivities();
 	});
 
-	$(".content").hide();
+	$(".list").hide();
 	$("#comp").click(function(){
 		$("#actlist").hide();
 		$("#complist").show();
@@ -105,7 +105,8 @@ function loadCompaniesDefault(){
 	$.each( data, function( key, company ) {
 		resultlist=resultlist+'<tr><td>'+company.companyID+'</td><td>'+company.companyName+'</td>';
 		resultlist=resultlist+'<td>'+company.street+', '+company.postnr+' '+company.city+'</td>';
-		resultlist=resultlist+'<td>'+company.description+'</td><td>'+company.website+'</td><td>'+company.facebook+'</td></tr>';
+		resultlist=resultlist+'<td>'+company.description+'</td><td><a href="'+company.website+'" target="_new">'+company.website+'</a></td>';
+		resultlist=resultlist+'<td><a href="'+company.facebook+'" target="_new">'+company.facebook+'</a></td></tr>';
 	});
 	$("#compResults").html(resultlist);
  });
@@ -117,7 +118,8 @@ function searchCompanies(){
 		$.each( data, function( key, company ) {
 			resultlist=resultlist+'<tr><td>'+company.companyID+'</td><td>'+company.companyName+'</td>';
 			resultlist=resultlist+'<td>'+company.street+', '+company.postnr+' '+company.city+'</td>';
-			resultlist=resultlist+'<td>'+company.description+'</td><td>'+company.website+'</td><td>'+company.facebook+'</td></tr>';
+			resultlist=resultlist+'<td>'+company.description+'</td><td><a href="'+company.website+'" target="_new">'+company.website+'</a></td>';
+			resultlist=resultlist+'<td><a href="'+company.facebook+'" target="_new">'+company.facebook+'</a></td></tr>';
 		});
 	$("#compResults").html(resultlist);
 	});
