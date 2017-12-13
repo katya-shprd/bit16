@@ -8,27 +8,22 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 <html>
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  	<meta name="keywords" content="footer, address, phone, icons" />
+    <meta name="keywords" content="footer, address, phone, icons" />
     <link rel="stylesheet" type="text/css" href="css/mystyle.css">
-  <!-- блок бутстрапов для таблицы -->
-    <link rel="stylesheet" href="assets/tether/tether.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/puritym/css/style.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/myscript.js"></script>
-    <script src="js/login.js"></script>
-
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
-
-
+    <link rel="stylesheet" href="assets/tether/tether.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/puritym/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/myscript.js"></script>
+    <script src="js/login.js"></script>
+    <script src="assets/web/assets/jquery/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -82,10 +77,6 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 			<h3 id="storyTitle"></h3>
 			<p id="storyDescription"></p>
 			<p id="storyLink"></p>
-			
-		</div>
-		<div class="modal-footer">
-			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 		</div>
 	</div>
   </div>
