@@ -109,7 +109,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
        
        
         <div class="col-6">
-        <span class="heading-2">Hotels</span><br>
+        <h3 class="heading-2">Hotels</h3><br>
         </div>
         <div class="col-6">
         <p class="description"><a href='https://www.booking.com/'>Open booking.com</a></p>
@@ -184,7 +184,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 </section>
 <section>
 <div class="col-6">
-<h3>Activities</h3>
+<h3 class="heading-2">Activities</h3>
 </div>
     <div class="col-6">
     <p class="description"><a href='companies.php'>Open to see more <br> </a> </p>
@@ -243,7 +243,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 <section>
 <div class="col-6">
     <div class="col-3">
-    <span class="heading-2">Still have some questions? <br>Contact us</span>
+    <span class="heading-2">Do you have some questions? <br>Contact us</span>
     </div>
 
     <div class="col-3">
