@@ -17,6 +17,18 @@ header('Cache-control:no-store,no-cache,must-revalidate');
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="">
 		<meta name="author" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="keywords" content="footer, address, phone, icons" />
+		<link href="css/mystyle.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/login.js"></script>
+
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+		
 		<title>Admin site</title>
 		<!-- Bootstrap core CSS -->
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -25,10 +37,11 @@ header('Cache-control:no-store,no-cache,must-revalidate');
 		<script src="../js/bootstrap.min.js"></script>
 		<script src="../js/myapp.js"></script>
 	</head>
+
 	<body>
 		<div class="container">
 		 <div class="panel panel-default container">
-	     <h3>Ourstories - Admin site</h3>
+	     <span class="heading-2">Ourstories - Admin site</span>
 		  <p>
 			<a href="index.php">Admin home</a>
 			<a href="index.php?page=users">Users</a>

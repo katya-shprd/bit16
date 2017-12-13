@@ -13,7 +13,6 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='' ?>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   	<meta name="keywords" content="footer, address, phone, icons" />
-    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
   <!-- блок бутстрапов для таблицы -->
     <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -27,7 +26,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='' ?>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 
-
+    <link rel="stylesheet" type="text/css" href="css/mystyle.css">
 </head>
 
 <body>
@@ -36,56 +35,60 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='' ?>
 
 <section>
 <div class="header">
-    <div class="pic-header" id="stories-header">
-        <h1>COMPANIES<br>ACTIVITIES</h1>
+    <div class="pic-header col" id="companies-header">
+        <h1 class="centered">FIND ACTIVITIES</h1>
+        <div class="col-6 centered"><p class="description-2">Browse companies and activities they offer. Just type city or company in the field bellow and you will see the list of avalible activities near by </p></div>
     </div>
 </div>
 </section>
-<section>
-<div >
-<button id="comp">Companies</button>
-<button id="act">Activities</button>
 
-<section id="complist" class="content">
-<h5>Companies</h5>
-<p>
-Find company by community name.
-<div class="col-3">
-<input type="text" id="compSearch" />
-</div>
-</p>
-<table class="table table-condensed">
-<thead>
-<tr>
-<th>#</th><th>Company</th><th>Address</th><th>About</th><th>Website</th><th>Facebook</th>
-</tr>
-</thead>
-<tbody id="compResults">
-</tbody>
-</table></section>
-</div>
-<div >
-<section id="actlist" class="content">    
-<h5>Activities</h5>
-<p>
-Find activity by keyword.
-<div class="col-3">
-    <input type="text" id="actSearch" />
-</div>
-</p>
-<table class="table table-condensed">
-<thead>
-<tr>
-<th>#</th><th>Activity</th><th>Keyword</th><th>Description</th>
-</tr>
-</thead>
-<tbody id="actResults">
-</tbody>
-</table>
+<section>
+    <div class="col-6 centered">
+    <input type="submit" value="Companies" id="comp"/>
+    <input type="submit" value="Activities" id="act"/>
+    </div>
 </section>
-</div>
+
+<section>
+    <div class="col-6 col centered">
+    <h3>Companies</h3>
+    <p>Find company by community name
+        <div class="col-3">
+            <input type="text" id="compSearch"/>
+        </div>
+    </p>
+    </div>
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+            <th>#</th><th>Company</th><th>Address</th><th>About</th><th>Website</th><th>Facebook</th>
+            </tr>
+        </thead>
+        <tbody id="compResults"></tbody>
+    </table>
+</section>
+
+
+<section>
+    <div class="col-6 col centered">    
+    <h3>Activities</h3>
+    <p>Find activity by keyword
+        <div class="col-3">
+            <input type="text" id="actSearch" />
+        </div>
+    </p>
+    </div>
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>#</th><th>Activity</th><th>Keyword</th><th>Description</th>
+            </tr>
+        </thead>
+        <tbody id="actResults"></tbody>
+    </table>
 </section>
 
 <?php include ("footer.html")?>
+
 </body>
 </html>

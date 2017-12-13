@@ -35,40 +35,33 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 
 <?php include ("nav.html") ?> 
 
-    <section>
-            <div class="header">
-                <div class="pic-header" id="stories-header">
-                    <h1>Our Stories</h1>
-                </div>
-            </div>
-    
-     
-    </section>
-    
- 
-
-    <div class="col-6">
-        <h3>Stories</h3>
-        <div class="form-group row">
-
-        <label for="searchstory">Search stories</label>
-        <div class="col-3">
-            
-        <input type="text" id="searchstory">
-        <div>
-        <label for="type">Select type</label>
-        <select id="type">
-            <option value="">-All-</option>
-            <option value="video">Video</option>
-            <option value="audio">Audio</option>
-            <option value="written">Text</option>
-        </select>
-        </div>
-</div>
-        </div>
+<section style="margin-bottom: 15em">
+<div class="header">
+    <div class="pic-header col" id="stories-header">
+        <h1 class="centered">OUR STORIES</h1>
+        <div class="col-6 centered"><p class="description-2">View, listen or read stories from Northern Lights Route. Type name of the story and choose the type or just scroll down and see the list of all avalible stories </p></div>
     </div>
-
-
+</div>
+</section>
+ 
+<section>  
+        <div class="col-6 centered col">
+            <span class="heading-1">Search stories</span>
+                <div class="col-3">
+                    <input type="text" id="searchstory">
+                </div>
+        </div>
+        <div class="col-6 centered">
+        <label for="type" class="col">Select type</label>
+                <select id="type">
+                    <option value="">-All-</option>
+                    <option value="video">Video</option>
+                    <option value="audio">Audio</option>
+                    <option value="written">Text</option>
+                </select>
+        </div>
+        </div>
+</section>
 <table class="table table-stripped">
  <thead>
 	<tr>
