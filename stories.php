@@ -18,11 +18,10 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/puritym/css/style.css">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/login.js"></script>
     <script src="js/myscript.js"></script>
+    <script src="js/login.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
@@ -73,16 +72,14 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 <table class="table table-stripped">
  <thead>
 	<tr>
-		<th>Story Title</th><th>Story Type</th><th>Link</th>
+		<th>Story Title</th><th>Story Type</th><th>Keywords</th><th>Link</th><th></th>
 	</tr>
  </thead>
  <tbody id="stories">
  </tbody>
 </table>
-
 <div id="showStory" class="modal fade" role="dialog">
  <div class="modal-dialog">
-	<!-- Modal content-->
 	<div class="modal-content">
 		<div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -109,19 +106,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 <?php include ("stories-form.php")?>
 </div>
 
-
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
 <?php include ("footer.html")?>
-
 
 </body>
 </html>

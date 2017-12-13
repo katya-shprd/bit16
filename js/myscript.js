@@ -15,11 +15,10 @@ $(document).ready(function(){
 	});
 	loadStoriesDefault();
 	
-	//searching stories in stories page - when searcword is written
 	$("#searchstory").keyup(function(){
 		searchStories();
 	});
-	//searching stories in stories page - when storytype is changed
+	
 	$("select").change(function(){
 		searchStories();
 	});
@@ -42,13 +41,19 @@ $(document).ready(function(){
 		$("#complist").hide();
 		$("#actlist").show();
 	});
-	$('#login-content').hide();
-    $('#login-trigger').click(function(){
-        $(this).next('#login-content').slideToggle();
-        $(this).toggleClass('active');					
-        if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
-            else $(this).find('span').html('&#x25BC;')
-        })
+
+	 $('#stories').on('click','.readmore', function(){
+		 $.getJSON( "selectedStory.php?storyID="+$(this).attr('data-storyID'), function( data ) {
+		var resultlist='';
+		$.each( data, function( key, story ) {
+			$("#storyTitle").html(story.storyTitle);
+			$("#storyDescription").html(story.storyDescription);
+			$("#storyLink").html('<iframe width="550" height="400" src="'+story.storyLink+'"></iframe>');
+		});		
+				
+		});
+	}); 
+
 	$("#formsignin").submit(function(){
 		var msg;
 		$("#logininfo").html('<p class="alert alert-info"> Checking login...</p>');
@@ -80,6 +85,15 @@ $(document).ready(function(){
 		});
 		return false; //no reload on the page
 	});
+
+	$('#login-content').hide();
+    $('#login-trigger').click(function(){
+        $(this).next('#login-content').slideToggle();
+        $(this).toggleClass('active');					
+        if ($(this).hasClass('active')) $(this).find('span').html('&#x25B2;')
+            else $(this).find('span').html('&#x25BC;')
+		});
+		
 
 	myFunction();
 });
@@ -136,8 +150,10 @@ function loadStoriesDefault(){
 	var resultlist='';
 	$.each( data, function( key, story ) {
 		resultlist=resultlist+'<tr><td>'+story.storyTitle+'</td><td>'+story.storyType+'</td>';
+		resultlist=resultlist+'<td>'+story.storyKeywords+'</td>';
 		resultlist=resultlist+'<td><a href="'+story.storyLink+'" target="_new">To the story</a></td>';
-		resultlist=resultlist+'<td>'+story.storyKeywords+'</td><td>'+story.storyDescription+'</td>';
+		resultlist=resultlist+'<td><button type="button" class="readmore btn" data-toggle="modal" data-target="#showStory" ';
+		resultlist=resultlist+'data-storyID="'+story.storyID+'">Read more</button></td>';
 		resultlist=resultlist+'</tr>';	
 	});
 	$("#stories").html(resultlist);
@@ -151,13 +167,15 @@ function searchStories(){
 	var resultlist='';
 	$.each( data, function( key, story ) {
 		resultlist=resultlist+'<tr><td>'+story.storyTitle+'</td><td>'+story.storyType+'</td>';
+		resultlist=resultlist+'<td>'+story.storyKeywords+'</td>';
 		resultlist=resultlist+'<td><a href="'+story.storyLink+'" target="_new">To the story</a></td>';
-		resultlist=resultlist+'<td>'+story.storyKeywords+'</td><td>'+story.storyDescription+'</td>';
+		resultlist=resultlist+'<td><button type="button" class="readmore btn" data-toggle="modal" data-target="#showStory" ';
+		resultlist=resultlist+'data-storyID="'+story.storyID+'">Read more</button></td>';
 		resultlist=resultlist+'</tr>';	
 	});
 	$("#stories").html(resultlist);
  });
-}
+};
 
 function myFunction() {
     var x = document.getElementById("myTopnav");
@@ -166,4 +184,4 @@ function myFunction() {
     } else {
         x.className = "topnav";
     }
-}
+};
