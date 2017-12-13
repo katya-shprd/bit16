@@ -51,6 +51,7 @@ type: "ROADMAP" // Map type (optional)
 var area=$("#area").val();
 var url="connection.php?city="+area;
 Markers(url);
+getUserLocation();
 }
 
 function Markers(url){
