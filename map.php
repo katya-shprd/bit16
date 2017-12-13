@@ -40,7 +40,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <script src="js/myRoute.js"></script>
 
 				<style>
-					#map {height: 800px; width: 600px; }
+					#map {height: 800px; width: 900px; }
 				</style>
 	</head>
 
@@ -55,17 +55,17 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
                     <h1>MAP</h1>
                 </div>
             </div>
-    
-     
+
+
     </section>
 
 	<div class="col-6 centered">
 			<span class="heading-1">Please, select area</span>
 	</div>
-			
+
 			<form id="search">
 				<select id="area">
-				
+
 						<option value=''>-Select-</option>
 						<option value='Tornio'>Tornio</option>
 						<option value='Haparanda'>Haparanda</option>
@@ -99,7 +99,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 	  </div>
 
 	  <?php include ("footer.html")?>
-	  
+
 	  <script>
 function myFunction() {
     var x = document.getElementById("myTopnav");
