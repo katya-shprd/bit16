@@ -33,40 +33,58 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
             <img class="pic" src="images/header.png" alt="lights">
         </div>
     </section>
-        <!-- карточки -->
-        <section>
+
+    <section>
             <div class="container">
                 <div class="row">
 
-                    <div class="card">
-                        <img id="country-pic" src="images/norway.png" alt="norway">
-                        <h4>NORWAY</h4>
-                        <p id="CA">CITIES <span class="activities">ACTIVITIES</span></p>
-                        <p id="number">9 <span class="num">11</span></p>
-
+                <div class="col-2 card centered">
+                    <img id="country-pic" src="images/norway.png" alt="norway">
+                    <h3>NORWAY</h3>
+                    <div class="row stats">
+                        <div class="col-1">
+                            <span class="label-title">Cities</span>
+                            <span class="label-value">3</span>
+                        </div>
+                        <div class="col-1">
+                            <span class="label-title">Activities</span>
+                            <span class="label-value">7</span>
+                        </div>
                     </div>
-
-                    <div class="card" id="finland">
-                        <img id="finland-pic" src="images/finland.png" alt="finland">
-                        <h4>FINLAND</h4>
-                        <p id="fin">CITIES <span class="activities1">ACTIVITIES</span></p>
-                        <p id="number1">12 <span class="num1">12</span></p>
-
+                </div>
+                <div class="col-2 card centered offset">
+                    <img id="finland-pic" src="images/finland.png" alt="finland">
+                    <h3>FINLAND</h3>
+                    <div class="row stats">
+                        <div class="col-1">
+                            <span class="label-title">Cities</span>
+                            <span class="label-value">8</span>
+                        </div>
+                        <div class="col-1">
+                            <span class="label-title">Activities</span>
+                            <span class="label-value">15</span>
+                        </div>
                     </div>
-
-                    <div class="card">
-                        <img id="country-pic" src="images/sweden.png" alt="sweden">
-                        <h4>SWEDEN</h4>
-                        <p id="CA">CITIES <span class="activities">ACTIVITIES</span></p>
-                        <p id="number2">13 <span class="num2">17</span></p>
+                </div>
+                <div class="col-2 card centered">
+                    <img id="country-pic" src="images/sweden.png" alt="sweden">
+                    <h3>SWEDEN</h3>
+                    <div class="row stats">
+                        <div class="col-1">
+                            <span class="label-title">Cities</span>
+                            <span class="label-value">5</span>
+                        </div>
+                        <div class="col-1">
+                            <span class="label-title">Activities</span>
+                            <span class="label-value">11</span>
+                        </div>
                     </div>
-
+                </div>
                 </div>
             </div>
     </section>
-
     <section>
-        <div class="col-6">
+        <div class="row">
             <div class="col-3">
                     <h3 id="route-dec">What is Northern&nbsp;Lights&nbsp;Route?</h3>
                     <p class="description">
@@ -164,10 +182,9 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     </div>      
     
 </section>
-<div class="magic">
 <section>
 <div class="col-6">
-<span class="heading-2">Activities</span>
+<h3>Activities</h3>
 </div>
     <div class="col-6">
     <p class="description"><a href='companies.php'>Open to see more <br> </a> </p>
@@ -212,11 +229,16 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 
 
 </div>
+<br>
    <section>
-    <div class="col-6 cta-full-width">
+    <div class="col-6 centered">
       <center><h3 id="route-dec">Take part in Northern Lights Route!</h3></center>
-      <center><a href="map.php"><input type="submit" value="See the map"/></a></center> 
-    </div>
+</div>
+<br>
+<div class="col-6 centered">
+    <img src="images/route-img.png">
+      <a href="map.php"><button id="see-map">See the map</button></a>
+</div>
     </section>
 <section>
 <div class="col-6">
