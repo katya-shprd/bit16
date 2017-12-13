@@ -39,39 +39,74 @@
     </section>
 <section>
     <div class="col-6 centered">
-			<span class="description-2">Hall of Fame describes top-30 travelers of Northern Lights Route. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu tellus, cursus ac mauris et, scelerisque blandit mauris. Suspendisse sed consequat odio.</span>
-    </div>
-    <div class="col-6 centered">
-        <span class="first-place">1</span>
-    </div>
-
-    <div class="col-6 centered">
-        <p id="second">2 <span class="third">3</span></p>
+			<p class="description-2">Hall of Fame describes top-30 travelers of Northern Lights Route. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu tellus, cursus ac mauris et, scelerisque blandit mauris. Suspendisse sed consequat odio.</p>
     </div>
 </section>    
 <!-- cards --> 
 
-
 <section>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-2 card centered">
+                <h3>Name firstname</h3>
+                <!-- <img id="finland-pic" src="images/finland.png" alt="finland"> -->
+                <div class="circle" id="circle-pic"></div>
+                <button class="cards-button">View profile</button>
+                <div class="row stats">
+                    <div class="col-1">
+                        <span class="label-title">Points</span>
+                        <span class="label-value">9</span>
+                    </div>
+                    <div class="col-1">
+                        <span class="label-title">Cities</span>
+                        <span class="label-value">11</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 card centered offset">
+                <h3>Name firstname</h3>
+                <div class="circle" id="circle-pic"></div>
+                <button class="cards-button">View profile</button>
+                <div class="row stats">
+                    <div class="col-1">
+                        <span class="label-title">Points</span>
+                        <span class="label-value">9</span>
+                    </div>
+                    <div class="col-1">
+                        <span class="label-title">Cities</span>
+                        <span class="label-value">11</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 card centered">
+                <h3>Name firstname</h3>
+                <div class="circle" id="circle-pic"></div>
+                <button class="cards-button">View profile</button>
+                <div class="row stats">
+                    <div class="col-1">
+                        <span class="label-title">Points</span>
+                        <span class="label-value">9</span>
+                    </div>
+                    <div class="col-1">
+                        <span class="label-title">Cities</span>
+                        <span class="label-value">11</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <section>
         <div class="container">
-            <div class="row">
-               
+            <div class="row">      
                 <div class="card silver">
-                   
                     <h3>Smoked Salmon</h3>
-                    
                     <div class="circle" id="circle-pic"></div>
-                  
                     <div class="button"><button>View profile</button></div>
-                    
                     <p id="CA">points <span class="activities">cities</span></p>
                     <p id="number">9 <span class="num">11</span></p>
-
                 </div>
-
                 <div class="card gold" id="gold"> 
-                    
                     <h3>Snow Lynx</h3>
                     <div class="circle" id="circle-pic1"></div>
                     
@@ -92,7 +127,7 @@
 
             </div>
         </div>
-</section>
+</section> -->
 <section id="hor-sec"> 
     <div class="hor-card">
         <span class="hor-order">4</span>

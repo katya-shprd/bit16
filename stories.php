@@ -53,10 +53,11 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
                     <option value="video">Video</option>
                     <option value="audio">Audio</option>
                     <option value="written">Text</option>
+                    <br>
                 </select>
         </div>
         </div>
-</section>
+<br>
 <table class="table table-stripped">
  <thead>
 	<tr>
@@ -81,7 +82,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 	</div>
   </div>
 </div>
-
+</section>
 <div class="col-6">
 <span class="heading-2">Share your own story</span>
 </div>
