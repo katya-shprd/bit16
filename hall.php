@@ -39,14 +39,7 @@
     </section>
 <section>
     <div class="col-6 centered">
-			<span class="description-2">Hall of Fame describes top-30 travelers of Northern Lights Route. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu tellus, cursus ac mauris et, scelerisque blandit mauris. Suspendisse sed consequat odio.</span>
-    </div>
-    <div class="col-6 centered">
-        <span class="first-place">1</span>
-    </div>
-
-    <div class="col-6 centered">
-        <p id="second">2 <span class="third">3</span></p>
+			<p class="description-2">Hall of Fame describes top-30 travelers of Northern Lights Route. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu tellus, cursus ac mauris et, scelerisque blandit mauris. Suspendisse sed consequat odio.</p>
     </div>
 </section>    
 <!-- cards --> 

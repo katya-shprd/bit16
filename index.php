@@ -68,7 +68,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     <section>
         <div class="col-6">
             <div class="col-3">
-                    <span id="route-dec">What is Northern&nbsp;Lights&nbsp;Route?</span>
+                    <h3 id="route-dec">What is Northern&nbsp;Lights&nbsp;Route?</h3>
                     <p class="description">
                             The Northern Lights Route offers a great experience for
                             You to travel through northern countries and see a unique aurora borellias. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis venenatis ex, eget ullamcorper diam. Etiam risus nulla, faucibus ut ex id, maximus finibus leo. Donec convallis mauris sed fermentum cursus.
@@ -82,7 +82,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
     </section>
     <section>
             <div class="col-6 opt-bot-marg">
-            <span id="route-dec" class="opt-bot-marg">Most popular places to begin with</span>
+            <h3 id="route-dec" class="opt-bot-marg">Most popular places to begin with</h3>
             </div>
             <div class="col-6">
             <p class="description">Looking for a hotel or activity to start discovering Lapland? Check this out </p>
@@ -98,7 +98,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
         </div>
     <div class="col-6">
      <div class="container-places">
-        <div class="col-15">
+        <div class="col-2">
                 <div class="cards-places">
                <img class="full-img" src="images/mustaparta.jpg">
             </div>
@@ -118,7 +118,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 
         </div>
 
-        <div class="col-15">
+        <div class="col-2">
                 <div class="cards-places">
                <img class="full-img" src="images/pello.png">
             </div>
@@ -139,7 +139,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 
         </div>
 
-        <div class="col-15">
+        <div class="col-2">
                 <div class="cards-places">
                <img class="full-img" src="images/river.jpg">
             </div>
@@ -175,7 +175,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 
 <div class="col-6">
 <div class="container-places">
-<div class="col-15">
+<div class="col-2">
         <div class="cards-places">
        <img class="full-img" src="images/farm_escape.jpg">
     </div>
@@ -186,7 +186,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
             
 </div>
 
-<div class="col-15">
+<div class="col-2">
         <div class="cards-places">
        <img class="full-img" src="images/skiing.jpg">
     </div>
@@ -197,7 +197,7 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
          
 </div>
 
-<div class="col-15">
+<div class="col-2">
 <div class="cards-places">
 <img class="full-img" src="images/camping.jpg">
 </div>
@@ -214,20 +214,21 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 </div>
    <section>
     <div class="col-6 cta-full-width">
-      <center><span id="route-dec">Take part in Northern Lights Route!</span></center>
+      <center><h3 id="route-dec">Take part in Northern Lights Route!</h3></center>
       <center><a href="map.php"><input type="submit" value="See the map"/></a></center> 
     </div>
     </section>
-
+<section>
 <div class="col-6">
-    <div class="col-15">
+    <div class="col-3">
     <span class="heading-2">Still have some questions? <br>Contact us</span>
     </div>
 
-    <div class="col-15">
+    <div class="col-3">
     <?php include ("contact-form.php")?>
     </div>
 </div>
+</section>
 <?php include ("footer.html")?>
 <script>
 function myFunction() {

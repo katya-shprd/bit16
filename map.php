@@ -50,17 +50,20 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 			<?php include ("nav.html") ?>
 
 <section>
-            <div class="header">
-                <div class="pic-header" id="map-header">
-                    <h1>MAP</h1>
-                </div>
-            </div>
-    
-     
-    </section>
+    <div class="header">
+        <div class="pic-header" id="map-header">
+                <h1>MAP</h1>
+        </div>
+</section>
+<section>
+    <div class="col-6 centered">
+			<p class="description-2">Hall of Fame describes top-30 travelers of Northern Lights Route. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu tellus, cursus ac mauris et, scelerisque blandit mauris. Suspendisse sed consequat odio.</p>
+    </div>
+</section>    
 
+<section>
 	<div class="col-6 centered">
-			<span class="heading-1">Please, select area</span>
+			<h3>Please, select area</h3>
 	</div>
 			
 			<form id="search">
@@ -87,13 +90,12 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 				<input type="submit" id="map-button" value="Show" />
 			</form>
         </div>
-
         <div class="embedContainer">
             <div class="googleMap">
 				<div id="map"></div>
 			</div>
         </div>
-
+</section>
 
 
 	  </div>
