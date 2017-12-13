@@ -90,6 +90,9 @@ if(!empty($_GET['page'])) $page=$_GET['page'];else $page='';
 				<input type="submit" id="map-button" value="Show" />
 			</form>
         </div>
+	
+	<div class="description" align="center">You can find companies, sort it by cities and find your own route using the map</div>
+
         <div class="embedContainer">
             <div class="googleMap">
 				<div id="map"></div>
